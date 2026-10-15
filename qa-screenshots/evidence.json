@@ -1,0 +1,741 @@
+{
+  "date": "2026-10-15",
+  "method": "Actual local HTTP navigation in Codex in-app Chromium; Lighthouse CLI with installed headless Microsoft Edge. No document inlining or simulated execution.",
+  "structural": {
+    "pages": 5,
+    "references": 165,
+    "httpTargets": 25,
+    "status": "PASS"
+  },
+  "responsive": [
+    {
+      "route": "/",
+      "width": 320,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Your Drive.\nRefined.",
+      "scroll": 305,
+      "viewport": 305
+    },
+    {
+      "route": "/about/",
+      "width": 320,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Driven by\ndetails.",
+      "scroll": 305,
+      "viewport": 305
+    },
+    {
+      "route": "/services/",
+      "width": 320,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Complete care.\nFor your vehicle.",
+      "scroll": 305,
+      "viewport": 305
+    },
+    {
+      "route": "/projects/",
+      "width": 320,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Every drive.\nA different story.",
+      "scroll": 305,
+      "viewport": 305
+    },
+    {
+      "route": "/contact/",
+      "width": 320,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Let\u00e2\u20ac\u2122s keep\nyou moving.",
+      "scroll": 305,
+      "viewport": 305
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Your Drive.\nRefined.",
+      "scroll": 360,
+      "viewport": 360
+    },
+    {
+      "route": "/about/",
+      "width": 375,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Driven by\ndetails.",
+      "scroll": 360,
+      "viewport": 360
+    },
+    {
+      "route": "/services/",
+      "width": 375,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Complete care.\nFor your vehicle.",
+      "scroll": 360,
+      "viewport": 360
+    },
+    {
+      "route": "/projects/",
+      "width": 375,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Every drive.\nA different story.",
+      "scroll": 360,
+      "viewport": 360
+    },
+    {
+      "route": "/contact/",
+      "width": 375,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Let\u00e2\u20ac\u2122s keep\nyou moving.",
+      "scroll": 360,
+      "viewport": 360
+    },
+    {
+      "route": "/",
+      "width": 430,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Your Drive.\nRefined.",
+      "scroll": 415,
+      "viewport": 415
+    },
+    {
+      "route": "/about/",
+      "width": 430,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Driven by\ndetails.",
+      "scroll": 415,
+      "viewport": 415
+    },
+    {
+      "route": "/services/",
+      "width": 430,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Complete care.\nFor your vehicle.",
+      "scroll": 415,
+      "viewport": 415
+    },
+    {
+      "route": "/projects/",
+      "width": 430,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Every drive.\nA different story.",
+      "scroll": 415,
+      "viewport": 415
+    },
+    {
+      "route": "/contact/",
+      "width": 430,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Let\u00e2\u20ac\u2122s keep\nyou moving.",
+      "scroll": 415,
+      "viewport": 415
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Your Drive.\nRefined.",
+      "scroll": 753,
+      "viewport": 753
+    },
+    {
+      "route": "/about/",
+      "width": 768,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Driven by\ndetails.",
+      "scroll": 753,
+      "viewport": 753
+    },
+    {
+      "route": "/services/",
+      "width": 768,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Complete care.\nFor your vehicle.",
+      "scroll": 753,
+      "viewport": 753
+    },
+    {
+      "route": "/projects/",
+      "width": 768,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Every drive.\nA different story.",
+      "scroll": 753,
+      "viewport": 753
+    },
+    {
+      "route": "/contact/",
+      "width": 768,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Let\u00e2\u20ac\u2122s keep\nyou moving.",
+      "scroll": 753,
+      "viewport": 753
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Your Drive.\nRefined.",
+      "scroll": 1009,
+      "viewport": 1009
+    },
+    {
+      "route": "/about/",
+      "width": 1024,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Driven by\ndetails.",
+      "scroll": 1009,
+      "viewport": 1009
+    },
+    {
+      "route": "/services/",
+      "width": 1024,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Complete care.\nFor your vehicle.",
+      "scroll": 1009,
+      "viewport": 1009
+    },
+    {
+      "route": "/projects/",
+      "width": 1024,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Every drive.\nA different story.",
+      "scroll": 1009,
+      "viewport": 1009
+    },
+    {
+      "route": "/contact/",
+      "width": 1024,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Let\u00e2\u20ac\u2122s keep\nyou moving.",
+      "scroll": 1009,
+      "viewport": 1009
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Your Drive.\nRefined.",
+      "scroll": 1425,
+      "viewport": 1425
+    },
+    {
+      "route": "/about/",
+      "width": 1440,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Driven by\ndetails.",
+      "scroll": 1425,
+      "viewport": 1425
+    },
+    {
+      "route": "/services/",
+      "width": 1440,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Complete care.\nFor your vehicle.",
+      "scroll": 1425,
+      "viewport": 1425
+    },
+    {
+      "route": "/projects/",
+      "width": 1440,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Every drive.\nA different story.",
+      "scroll": 1425,
+      "viewport": 1425
+    },
+    {
+      "route": "/contact/",
+      "width": 1440,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Let\u00e2\u20ac\u2122s keep\nyou moving.",
+      "scroll": 1425,
+      "viewport": 1425
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Your Drive.\nRefined.",
+      "scroll": 1905,
+      "viewport": 1905
+    },
+    {
+      "route": "/about/",
+      "width": 1920,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Driven by\ndetails.",
+      "scroll": 1905,
+      "viewport": 1905
+    },
+    {
+      "route": "/services/",
+      "width": 1920,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Complete care.\nFor your vehicle.",
+      "scroll": 1905,
+      "viewport": 1905
+    },
+    {
+      "route": "/projects/",
+      "width": 1920,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Every drive.\nA different story.",
+      "scroll": 1905,
+      "viewport": 1905
+    },
+    {
+      "route": "/contact/",
+      "width": 1920,
+      "brokenImages": [],
+      "css": "rgb(12, 15, 14)",
+      "h1": "Let\u00e2\u20ac\u2122s keep\nyou moving.",
+      "scroll": 1905,
+      "viewport": 1905
+    }
+  ],
+  "functional": [
+    "Mobile menu opens by keyboard",
+    "Menu moves focus to Home",
+    "Escape restores menu toggle focus",
+    "Mobile navigation reaches Projects",
+    "Exterior filter shows 1 concepts",
+    "Interior filter shows 1 concepts",
+    "Refinement filter shows 2 concepts",
+    "Protection filter shows 1 concepts",
+    "Maintenance filter shows 1 concepts",
+    "All concepts filter shows 6 concepts",
+    "Image viewer opens by keyboard",
+    "Corrected image viewer contains Tab focus",
+    "Image viewer Escape restores opener focus",
+    "Service query preselects Paint Correction",
+    "Empty demo focuses first invalid field",
+    "Invalid email produces focused validation",
+    "Valid demo explains no enquiry was sent or saved",
+    "Successful response receives focus",
+    "FAQ opens by keyboard"
+  ],
+  "finalMobile": [
+    {
+      "route": "home",
+      "broken": [],
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "about",
+      "broken": [],
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "contact",
+      "broken": [],
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "home",
+      "requestedWidth": 320,
+      "client": 305,
+      "scroll": 305
+    },
+    {
+      "route": "about",
+      "requestedWidth": 320,
+      "client": 305,
+      "scroll": 305
+    },
+    {
+      "route": "services",
+      "requestedWidth": 320,
+      "client": 305,
+      "scroll": 305
+    },
+    {
+      "route": "projects",
+      "requestedWidth": 320,
+      "client": 305,
+      "scroll": 305
+    },
+    {
+      "route": "contact",
+      "requestedWidth": 320,
+      "client": 305,
+      "scroll": 305
+    }
+  ],
+  "navigation": [
+    {
+      "navigation": "about",
+      "url": "http://127.0.0.1:8001/about/"
+    },
+    {
+      "navigation": "services",
+      "url": "http://127.0.0.1:8001/services/"
+    },
+    {
+      "navigation": "projects",
+      "url": "http://127.0.0.1:8001/projects/"
+    },
+    {
+      "navigation": "contact",
+      "url": "http://127.0.0.1:8001/contact/"
+    },
+    {
+      "navigation": "home",
+      "url": "http://127.0.0.1:8001/"
+    },
+    {
+      "mobile": "home",
+      "broken": [],
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "mobile": "about",
+      "broken": [],
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "mobile": "contact",
+      "broken": [],
+      "client": 375,
+      "scroll": 375
+    }
+  ],
+  "lighthouse": [
+    {
+      "run": "mobile-delivery",
+      "lighthouseVersion": "13.5.0",
+      "url": "http://127.0.0.1:8001/",
+      "fetchTime": "2026-10-15T15:05:34.858Z",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 436,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 58
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 1407.749,
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "value": 2399.498,
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "value": 32,
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "value": 0.06045575709883971,
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "value": 1929.5174822531671,
+          "unit": "millisecond"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "unminified-css",
+          "title": "Minify CSS",
+          "score": 0,
+          "explanation": null
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "explanation": null
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0,
+          "explanation": null
+        },
+        {
+          "id": "robots-txt",
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "explanation": "Fetch of robots.txt failed: Protocol error (Network.loadNetworkResource): Protocol error (Network.loadNetworkResource): CSP violation"
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "explanation": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "explanation": null
+        }
+      ]
+    },
+    {
+      "run": "desktop",
+      "lighthouseVersion": "13.5.0",
+      "url": "http://127.0.0.1:8000/",
+      "fetchTime": "2026-10-15T14:54:59.746Z",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 1186.5,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "formFactor": "desktop",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66
+      },
+      "metrics": {
+        "first-contentful-paint": {
+          "value": 352.46000000000004,
+          "unit": "millisecond"
+        },
+        "largest-contentful-paint": {
+          "value": 832.46,
+          "unit": "millisecond"
+        },
+        "total-blocking-time": {
+          "value": 155.76999999999998,
+          "unit": "millisecond"
+        },
+        "cumulative-layout-shift": {
+          "value": 0,
+          "unit": "unitless"
+        },
+        "speed-index": {
+          "value": 1332.2894520171592,
+          "unit": "millisecond"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "label-content-name-mismatch",
+          "title": "Elements with visible text labels do not have matching accessible names.",
+          "score": 0,
+          "explanation": null
+        },
+        {
+          "id": "is-crawlable",
+          "title": "Page is blocked from indexing",
+          "score": 0,
+          "explanation": null
+        },
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "explanation": null
+        },
+        {
+          "id": "image-delivery-insight",
+          "title": "Improve image delivery",
+          "score": 0,
+          "explanation": null
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "explanation": null
+        }
+      ]
+    },
+    {
+      "run": "about",
+      "lighthouseVersion": "13.5.0",
+      "url": "http://127.0.0.1:8001/about/",
+      "fetchTime": "2026-10-15T15:02:34.842Z",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 1551,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "scores": {
+        "accessibility": 100,
+        "best-practices": 100
+      },
+      "metrics": {},
+      "failedAudits": []
+    },
+    {
+      "run": "services-final",
+      "lighthouseVersion": "13.5.0",
+      "url": "http://127.0.0.1:8001/services/",
+      "fetchTime": "2026-10-15T15:06:55.636Z",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 1118,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "scores": {
+        "accessibility": 100,
+        "best-practices": 100
+      },
+      "metrics": {},
+      "failedAudits": []
+    },
+    {
+      "run": "projects",
+      "lighthouseVersion": "13.5.0",
+      "url": "http://127.0.0.1:8001/projects/",
+      "fetchTime": "2026-10-15T15:03:37.937Z",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 1014,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "scores": {
+        "accessibility": 100,
+        "best-practices": 100
+      },
+      "metrics": {},
+      "failedAudits": []
+    },
+    {
+      "run": "contact",
+      "lighthouseVersion": "13.5.0",
+      "url": "http://127.0.0.1:8001/contact/",
+      "fetchTime": "2026-10-15T15:04:06.887Z",
+      "environment": {
+        "networkUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Mobile Safari/537.36",
+        "hostUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+        "benchmarkIndex": 971,
+        "credits": {
+          "axe-core": "4.13.0"
+        }
+      },
+      "formFactor": "mobile",
+      "throttlingMethod": "simulate",
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "scores": {
+        "accessibility": 100,
+        "best-practices": 100
+      },
+      "metrics": {},
+      "failedAudits": []
+    }
+  ],
+  "limits": [
+    "Local lab scores are not hosted or field metrics.",
+    "Staging noindex is intentional.",
+    "Lighthouse robots fetch was blocked by connect-src none; direct HTTP robots check passed.",
+    "No physical-device, Safari, Firefox, screen-reader or formal WCAG certification.",
+    "No measured network-request counter for the demo; absence of send/storage code and restrictive CSP verified."
+  ]
+}

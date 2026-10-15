@@ -1,0 +1,12 @@
+.env*
+node_modules/
+.cache/
+.wrangler/
+.dev.vars*
+test-results/
+playwright-report/
+tmp/
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db

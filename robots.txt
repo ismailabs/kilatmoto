@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# Staging: HTML and HTTP headers carry noindex. Crawling remains allowed.
