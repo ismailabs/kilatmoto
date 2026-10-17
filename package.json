@@ -1,0 +1,16 @@
+{
+  "name": "kilatmoto",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test:browser": "node scripts/browser-qa.cjs",
+    "deploy": "npm run build && wrangler deploy"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
+    "lighthouse": "^13.5.0",
+    "wrangler": "^4.151.1"
+  }
+}

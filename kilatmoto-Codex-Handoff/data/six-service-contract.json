@@ -1,0 +1,37 @@
+{
+  "source": "Connected GitHub services/index.html and README retrieved 2026-10-17",
+  "immutable_names": true,
+  "ids_must_be_verified_against_live_source": true,
+  "services": [
+    {
+      "id": "exterior",
+      "name": "Signature Exterior Detail",
+      "copy_can_be_improved": true
+    },
+    {
+      "id": "interior",
+      "name": "Interior Reset",
+      "copy_can_be_improved": true
+    },
+    {
+      "id": "paint",
+      "name": "Paint Correction",
+      "copy_can_be_improved": true
+    },
+    {
+      "id": "ceramic",
+      "name": "Ceramic Protection",
+      "copy_can_be_improved": true
+    },
+    {
+      "id": "wheels",
+      "name": "Wheel & Glass Care",
+      "copy_can_be_improved": true
+    },
+    {
+      "id": "maintenance",
+      "name": "Maintenance Detail",
+      "copy_can_be_improved": true
+    }
+  ]
+}

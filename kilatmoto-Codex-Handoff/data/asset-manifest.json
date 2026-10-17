@@ -1,0 +1,89 @@
+{
+  "created": "2026-10-17",
+  "note": "Original AI-generated photos are fictional, not commercial customer work. Local derivatives created with Pillow. Logo files are editable SVG. No licensed fonts are distributed in this handoff.",
+  "assets": [
+    {
+      "path": "assets/brand/precision-grid.svg",
+      "bytes": 323,
+      "sha256": "504172e8133510e277ee67c91e48ee8a7340bccbf6e5767821b4d9e8e0f78603"
+    },
+    {
+      "path": "assets/brand/symbol.svg",
+      "bytes": 251,
+      "sha256": "ad3ccabbcbcd3a16117c5af89b4409cdda49a9a51fd4ffbe63ff3d1efa50797d"
+    },
+    {
+      "path": "assets/brand/wordmark-dark.svg",
+      "bytes": 634,
+      "sha256": "0a939c40286882ab5528f5121202cfce50de341e4cf4c18d9c4c6f2f6ee0b1f6"
+    },
+    {
+      "path": "assets/brand/wordmark-light.svg",
+      "bytes": 634,
+      "sha256": "2160cf6efb3a2adacde165e6c7f74b40d7f95c6cc0e4c02dcbd5ed001ba704d0"
+    },
+    {
+      "path": "assets/photos/hero-vehicle-1600.webp",
+      "bytes": 180726,
+      "sha256": "13f546af52955a3f600e3f658bc8a8e3ec702d51d3de14b26747926347689d75",
+      "dimensions": [
+        1600,
+        900
+      ]
+    },
+    {
+      "path": "assets/photos/hero-vehicle-960.webp",
+      "bytes": 79008,
+      "sha256": "bef75115659ba0d84fa2228618e81c862263a65fbf8d75404085e674cc18157b",
+      "dimensions": [
+        960,
+        540
+      ]
+    },
+    {
+      "path": "assets/photos/hero-vehicle-mobile-900.webp",
+      "bytes": 121598,
+      "sha256": "0dad2fb0887b324f5ea618b61119b7046ce6d882c045a00a293075bb29704ce9",
+      "dimensions": [
+        900,
+        1200
+      ]
+    },
+    {
+      "path": "assets/photos/paint-correction-1200.webp",
+      "bytes": 91056,
+      "sha256": "8de384b0cf23669e0bb47fbbf6036eb099845014457cd3ce637ac3e9aa8bccc9",
+      "dimensions": [
+        1200,
+        675
+      ]
+    },
+    {
+      "path": "assets/photos/paint-correction-720.webp",
+      "bytes": 44086,
+      "sha256": "9b238db02a6c8fdf80929b6a55a5d41ad0c5dcb9906d1a7d69fd81e695835756",
+      "dimensions": [
+        720,
+        405
+      ]
+    },
+    {
+      "path": "assets/photos/wheel-detail-1200.webp",
+      "bytes": 144616,
+      "sha256": "cf9fe2257aa6634be5005a908aa5ecef9714b3e00698d306e5c16988927c6a46",
+      "dimensions": [
+        1200,
+        800
+      ]
+    },
+    {
+      "path": "assets/photos/wheel-detail-720.webp",
+      "bytes": 65386,
+      "sha256": "069ca6258c48842b5951b9550620ae6afb2c3f088f2b0f1ca5cd93c2c5959601",
+      "dimensions": [
+        720,
+        480
+      ]
+    }
+  ]
+}

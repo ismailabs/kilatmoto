@@ -1,75 +1,46 @@
-# RAPI MOTION — Your Drive. Refined.
+# KILAT MOTORWORKS
 
-A five-page automotive detailing portfolio concept by [ISMAIL](https://www.ismailstudio.my/). RAPI MOTION is fictional: services, studio imagery, vehicle stories and enquiries are demonstrations. There is no operating workshop, booking service, price list or customer record.
+A five-page fictional Malaysian automotive detailing website by [ISMAIL](https://www.ismailstudio.my/). Editable HTML, CSS and vanilla JavaScript; no browser framework or third-party runtime requests.
 
-Source repository: [ismailabs/rapi-motion](https://github.com/ismailabs/rapi-motion). Intended future domain: `https://rapimotion.ismailstudio.my/`. Hosting and DNS are not configured by this delivery.
+- Source: https://github.com/ismailabs/kilatmoto (renamed in place, history retained).
+- Intended public host: https://kilatmoto.ismailstudio.my/
+- Hosting: Cloudflare Worker `kilatmoto` with Static Assets, not Pages.
+- Release evidence: `kilatmoto-Codex-Handoff/16-RELEASE-REPORT.md` and `qa-artifacts/`.
 
-## Preview on Windows
+## Preview and verify
 
-Double-click **`preview.cmd`**, then open **http://localhost:8000/**. Keep its terminal open; press Ctrl+C to stop. Python 3 is needed for local preview only.
-
-Alternatively, open PowerShell in this folder and run:
-
-```powershell
-py scripts/serve.py
-```
-
-If `py` is unavailable, use `python scripts/serve.py`. If port 8000 is busy, use `py scripts/serve.py --port 8002` and open http://localhost:8002/. The included server serves the repository root regardless of your terminal directory, applies the site's global security headers, blocks dotfiles and directory listings, and binds only to this computer.
-
-A basic fallback, **run from the project root**, is `py -m http.server 8000 --bind 127.0.0.1`. It serves the same pages but does not emulate Cloudflare headers. Double-clicking `index.html` is not supported: `/assets/` and clean page routes need an HTTP origin. No assets need to be downloaded during normal use.
-
-## Pages and features
-
-| Route | Content |
-|---|---|
-| `/` | Cinematic introduction, care philosophy, services, process, three project concepts, FAQs |
-| `/about/` | Fictional studio philosophy, assessment principles and care workflow |
-| `/services/` | Six services with inclusions, suitability, limitations, selection guidance and FAQs |
-| `/projects/` | Six fictional studies, six focus filters, care disclosures and keyboard image viewer |
-| `/contact/` | Local-only enquiry validation, location concept, FAQs and genuine ISMAIL link |
-
-The mobile menu supports keyboard opening, Escape and focus restoration. FAQs and service details use native HTML disclosures. Gallery links open the image normally without JavaScript; supported browsers enhance them with a native modal. Filters appear only once active; all six projects remain available without JavaScript. Motion is restrained and reduced-motion preferences are respected.
-
-The enquiry deliberately has **no `<form>`, submission endpoint, network call or browser storage**. Its button checks required values and email syntax in the current tab, focuses invalid fields, then announces: “No enquiry has been submitted, sent or saved.” Use sample information. Nothing is booked. The real business enquiry pathway is the separate ISMAIL portfolio link.
-
-## Structure and editing
-
-```text
-index.html                 Home
-about/index.html           About
-services/index.html        Services
-projects/index.html        Projects
-contact/index.html         Contact demo
-assets/css/styles.css      Shared tokens, components and responsive layouts
-assets/js/main.js          Progressive navigation, filters, viewer and demo validation
-assets/images/             Local WebP editorial artwork
-assets/fonts/              Space Grotesk display font and OFL licence
-assets/icons/              Identity artwork
-favicon.svg, og-image.webp Brand and social assets
-_headers                   Cloudflare security and staging indexing policy
-robots.txt, sitemap.xml     Explicit SEO lifecycle outputs
-preview.cmd                Beginner-friendly Windows preview
-scripts/serve.py            Optional local preview helper
-scripts/verify_static.py    Structural, safety, SEO and HTTP checks
-scripts/configure_seo.py    Explicit staging/production source configuration
-qa-screenshots/             Actual HTTP browser screenshots and compact evidence
-```
-
-Edit content directly in the five standalone HTML files. No generator or build is needed. Shared navigation and footer are intentionally materialised in each page; update all five together. Change palette, spacing and breakpoints in the CSS. Display type uses local Space Grotesk; body copy uses the system Arial/sans-serif stack. Change behaviour only in `main.js`.
-
-Service IDs (`exterior`, `interior`, `paint`, `ceramic`, `wheels`, `maintenance`) must agree with contact select values and service CTA query strings. Project `data-category` values must agree with filter button values. Preserve the SEO marker comments in each document. Record any replacement image's rights and origin in [ASSET-MANIFEST.md](ASSET-MANIFEST.md).
-
-## Verify and prepare for launch
+Run `py scripts/serve.py` and open http://127.0.0.1:8000/. Use HTTP rather than opening index.html directly. Python is only a preview/verification dependency.
 
 ```powershell
-py scripts/verify_static.py
+npm ci
 py scripts/verify_static.py --base-url http://127.0.0.1:8000
-py scripts/configure_seo.py --mode staging --check
 node --check assets/js/main.js
+npm run test:browser
+node scripts/performance-qa.mjs
+npm run build
+npx wrangler deploy --dry-run
 ```
 
-Node is optional for JavaScript syntax checking; it is not a production dependency. Python checks use only its standard library.
+Browser QA uses an installed Microsoft Edge. Set `QA_ORIGIN` to the public HTTPS origin to exercise production. The scripts save real screenshots and structured observations. Dev dependencies provide QA and publishing; the shipped website has no package dependency.
 
-The delivered source is **staging / noindex**. Crawling is allowed so search engines can read the restriction. There are no production canonicals, no advertised sitemap and no claims that the intended hostname is active. The production transition writes unique canonicals, absolute social URLs, five sitemap entries and production robots/headers together. Follow [DEPLOYMENT.md](DEPLOYMENT.md) only after launch is authorised.
+## Content and interactions
 
-See [QA.md](QA.md) for actual measurements, browser coverage and limits. Physical devices, Safari/Firefox, screen-reader conformance, hosted headers, public indexing and field Core Web Vitals require later verification. No analytics or conversion rates are claimed. Future measurement could examine service exploration, filter use and ISMAIL click-through, subject to a separate privacy-conscious instrumentation decision; no tracking is installed.
+| Route | Purpose |
+|---|---|
+| `/` | Cinematic introduction, six services, care process, project previews, creator invitation and FAQ |
+| `/about/` | Fictional brand principles, Malaysian driving context and hypothetical workflow |
+| `/services/` | Six exact service labels/IDs, suitability, native disclosures, limitations and demo selection links |
+| `/projects/` | Six preserved concepts and filter associations; keyboard-operable filters and modal image viewer |
+| `/contact/` | Local validation only; fictional location context and distinct genuine ISMAIL destination |
+
+Services: Signature Exterior Detail (`exterior`), Interior Reset (`interior`), Paint Correction (`paint`), Ceramic Protection (`ceramic`), Wheel & Glass Care (`wheels`), Maintenance Detail (`maintenance`).
+
+No HTML form, submission endpoint, analytics, mail, booking, payment, cookies or browser storage is used. Use sample details only. The explicit response says no enquiry was sent, submitted, booked or saved. CSP forbids form actions and network connections. All six projects and navigation remain available without JavaScript; native disclosures and original-image links still work.
+
+## Authoring and deployment
+
+Edit the five HTML files, shared `assets/css/styles.css` and `assets/js/main.js` directly. Photo variants and editable SVG identity files live under `assets/photos/` and `assets/brand/`. The handoff is a reference package; it is never uploaded as website content.
+
+`npm run build` copies only an allowlisted set of public files into `dist/`. It excludes Git metadata, the handoff, docs, node_modules, scripts and QA evidence. `release.json` and `X-Release-SHA` identify the source commit; `dirty` reports tracked local changes at build time. `wrangler.jsonc` deploys that directory to the named Worker/custom domain. See DEPLOYMENT.md for lifecycle and rollback.
+
+Production is intended to be indexable with honest fictional-portfolio metadata. Search-engine inclusion is separate from technical indexability. See the release report for the actual verified state.

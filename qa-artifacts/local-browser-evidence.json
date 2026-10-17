@@ -1,0 +1,995 @@
+{
+  "origin": "http://127.0.0.1:8000",
+  "time": "2026-10-17T00:44:37.228Z",
+  "browser": "Microsoft Edge / Chromium",
+  "responsive": [
+    {
+      "route": "/",
+      "width": 320,
+      "client": 320,
+      "scroll": 320
+    },
+    {
+      "route": "/about",
+      "width": 320,
+      "client": 320,
+      "scroll": 320
+    },
+    {
+      "route": "/services",
+      "width": 320,
+      "client": 320,
+      "scroll": 320
+    },
+    {
+      "route": "/projects",
+      "width": 320,
+      "client": 320,
+      "scroll": 320
+    },
+    {
+      "route": "/contact",
+      "width": 320,
+      "client": 320,
+      "scroll": 320
+    },
+    {
+      "route": "/",
+      "width": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "/about",
+      "width": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "/services",
+      "width": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "/projects",
+      "width": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "/contact",
+      "width": 375,
+      "client": 375,
+      "scroll": 375
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "client": 390,
+      "scroll": 390
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "client": 390,
+      "scroll": 390
+    },
+    {
+      "route": "/services",
+      "width": 390,
+      "client": 390,
+      "scroll": 390
+    },
+    {
+      "route": "/projects",
+      "width": 390,
+      "client": 390,
+      "scroll": 390
+    },
+    {
+      "route": "/contact",
+      "width": 390,
+      "client": 390,
+      "scroll": 390
+    },
+    {
+      "route": "/",
+      "width": 430,
+      "client": 430,
+      "scroll": 430
+    },
+    {
+      "route": "/about",
+      "width": 430,
+      "client": 430,
+      "scroll": 430
+    },
+    {
+      "route": "/services",
+      "width": 430,
+      "client": 430,
+      "scroll": 430
+    },
+    {
+      "route": "/projects",
+      "width": 430,
+      "client": 430,
+      "scroll": 430
+    },
+    {
+      "route": "/contact",
+      "width": 430,
+      "client": 430,
+      "scroll": 430
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "client": 768,
+      "scroll": 768
+    },
+    {
+      "route": "/about",
+      "width": 768,
+      "client": 768,
+      "scroll": 768
+    },
+    {
+      "route": "/services",
+      "width": 768,
+      "client": 768,
+      "scroll": 768
+    },
+    {
+      "route": "/projects",
+      "width": 768,
+      "client": 768,
+      "scroll": 768
+    },
+    {
+      "route": "/contact",
+      "width": 768,
+      "client": 768,
+      "scroll": 768
+    },
+    {
+      "route": "/",
+      "width": 1024,
+      "client": 1024,
+      "scroll": 1024
+    },
+    {
+      "route": "/about",
+      "width": 1024,
+      "client": 1024,
+      "scroll": 1024
+    },
+    {
+      "route": "/services",
+      "width": 1024,
+      "client": 1024,
+      "scroll": 1024
+    },
+    {
+      "route": "/projects",
+      "width": 1024,
+      "client": 1024,
+      "scroll": 1024
+    },
+    {
+      "route": "/contact",
+      "width": 1024,
+      "client": 1024,
+      "scroll": 1024
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "client": 1440,
+      "scroll": 1440
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "client": 1440,
+      "scroll": 1440
+    },
+    {
+      "route": "/services",
+      "width": 1440,
+      "client": 1440,
+      "scroll": 1440
+    },
+    {
+      "route": "/projects",
+      "width": 1440,
+      "client": 1440,
+      "scroll": 1440
+    },
+    {
+      "route": "/contact",
+      "width": 1440,
+      "client": 1440,
+      "scroll": 1440
+    },
+    {
+      "route": "/",
+      "width": 1920,
+      "client": 1920,
+      "scroll": 1920
+    },
+    {
+      "route": "/about",
+      "width": 1920,
+      "client": 1920,
+      "scroll": 1920
+    },
+    {
+      "route": "/services",
+      "width": 1920,
+      "client": 1920,
+      "scroll": 1920
+    },
+    {
+      "route": "/projects",
+      "width": 1920,
+      "client": 1920,
+      "scroll": 1920
+    },
+    {
+      "route": "/contact",
+      "width": 1920,
+      "client": 1920,
+      "scroll": 1920
+    }
+  ],
+  "axe": [
+    {
+      "route": "",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "about",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "services",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "projects",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "contact",
+      "width": 390,
+      "violations": []
+    },
+    {
+      "route": "",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "about",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "services",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "projects",
+      "width": 1440,
+      "violations": []
+    },
+    {
+      "route": "contact",
+      "width": 1440,
+      "violations": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "No overflow  320",
+      "pass": true
+    },
+    {
+      "name": "One H1 ",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "No overflow about 320",
+      "pass": true
+    },
+    {
+      "name": "One H1 about",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "No overflow services 320",
+      "pass": true
+    },
+    {
+      "name": "One H1 services",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "No overflow projects 320",
+      "pass": true
+    },
+    {
+      "name": "One H1 projects",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "No overflow contact 320",
+      "pass": true
+    },
+    {
+      "name": "One H1 contact",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "No overflow  375",
+      "pass": true
+    },
+    {
+      "name": "One H1 ",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "No overflow about 375",
+      "pass": true
+    },
+    {
+      "name": "One H1 about",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "No overflow services 375",
+      "pass": true
+    },
+    {
+      "name": "One H1 services",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "No overflow projects 375",
+      "pass": true
+    },
+    {
+      "name": "One H1 projects",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "No overflow contact 375",
+      "pass": true
+    },
+    {
+      "name": "One H1 contact",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "No overflow  390",
+      "pass": true
+    },
+    {
+      "name": "One H1 ",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "No overflow about 390",
+      "pass": true
+    },
+    {
+      "name": "One H1 about",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "No overflow services 390",
+      "pass": true
+    },
+    {
+      "name": "One H1 services",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "No overflow projects 390",
+      "pass": true
+    },
+    {
+      "name": "One H1 projects",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "No overflow contact 390",
+      "pass": true
+    },
+    {
+      "name": "One H1 contact",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "No overflow  430",
+      "pass": true
+    },
+    {
+      "name": "One H1 ",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "No overflow about 430",
+      "pass": true
+    },
+    {
+      "name": "One H1 about",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "No overflow services 430",
+      "pass": true
+    },
+    {
+      "name": "One H1 services",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "No overflow projects 430",
+      "pass": true
+    },
+    {
+      "name": "One H1 projects",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "No overflow contact 430",
+      "pass": true
+    },
+    {
+      "name": "One H1 contact",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "No overflow  768",
+      "pass": true
+    },
+    {
+      "name": "One H1 ",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "No overflow about 768",
+      "pass": true
+    },
+    {
+      "name": "One H1 about",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "No overflow services 768",
+      "pass": true
+    },
+    {
+      "name": "One H1 services",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "No overflow projects 768",
+      "pass": true
+    },
+    {
+      "name": "One H1 projects",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "No overflow contact 768",
+      "pass": true
+    },
+    {
+      "name": "One H1 contact",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "No overflow  1024",
+      "pass": true
+    },
+    {
+      "name": "One H1 ",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "No overflow about 1024",
+      "pass": true
+    },
+    {
+      "name": "One H1 about",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "No overflow services 1024",
+      "pass": true
+    },
+    {
+      "name": "One H1 services",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "No overflow projects 1024",
+      "pass": true
+    },
+    {
+      "name": "One H1 projects",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "No overflow contact 1024",
+      "pass": true
+    },
+    {
+      "name": "One H1 contact",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "No overflow  1440",
+      "pass": true
+    },
+    {
+      "name": "One H1 ",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "No overflow about 1440",
+      "pass": true
+    },
+    {
+      "name": "One H1 about",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "No overflow services 1440",
+      "pass": true
+    },
+    {
+      "name": "One H1 services",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "No overflow projects 1440",
+      "pass": true
+    },
+    {
+      "name": "One H1 projects",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "No overflow contact 1440",
+      "pass": true
+    },
+    {
+      "name": "One H1 contact",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "No overflow  1920",
+      "pass": true
+    },
+    {
+      "name": "One H1 ",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "No overflow about 1920",
+      "pass": true
+    },
+    {
+      "name": "One H1 about",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "No overflow services 1920",
+      "pass": true
+    },
+    {
+      "name": "One H1 services",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "No overflow projects 1920",
+      "pass": true
+    },
+    {
+      "name": "One H1 projects",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "No overflow contact 1920",
+      "pass": true
+    },
+    {
+      "name": "One H1 contact",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "Keyboard menu open Escape focus restoration",
+      "pass": true
+    },
+    {
+      "name": "Mobile menu navigation",
+      "pass": true
+    },
+    {
+      "name": "All desktop navigation links",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "Keyboard filter exterior",
+      "pass": true
+    },
+    {
+      "name": "Keyboard filter interior",
+      "pass": true
+    },
+    {
+      "name": "Keyboard filter refinement",
+      "pass": true
+    },
+    {
+      "name": "Keyboard filter protection",
+      "pass": true
+    },
+    {
+      "name": "Keyboard filter maintenance",
+      "pass": true
+    },
+    {
+      "name": "Keyboard filter all",
+      "pass": true
+    },
+    {
+      "name": "Gallery open Tab Shift+Tab Escape focus restoration",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/?service=exterior",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/?service=interior",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/?service=paint",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/?service=ceramic",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/?service=wheels",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/?service=maintenance",
+      "pass": true
+    },
+    {
+      "name": "All six query-string service mappings",
+      "pass": true
+    },
+    {
+      "name": "Empty invalid and valid demo validation",
+      "pass": true
+    },
+    {
+      "name": "Zero network requests during demo interaction",
+      "pass": true
+    },
+    {
+      "name": "Zero storage/cookies after demo",
+      "pass": true
+    },
+    {
+      "name": "Native FAQ keyboard expansion",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow  640",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow about 640",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow services 640",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow projects 640",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow contact 640",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow  960",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow about 960",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow services 960",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow projects 960",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "200 percent zoom reflow contact 960",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion disables smooth scrolling",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /about/",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /services/",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /projects/",
+      "pass": true
+    },
+    {
+      "name": "HTTP 200 /contact/",
+      "pass": true
+    },
+    {
+      "name": "No-JS five routes navigation all projects original links demo fallback",
+      "pass": true
+    },
+    {
+      "name": "No browser JS console or HTTP errors",
+      "pass": true
+    },
+    {
+      "name": "Zero axe violations across 10 page/viewport audits",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "demoRequests": []
+}

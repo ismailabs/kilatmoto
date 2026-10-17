@@ -134,7 +134,7 @@
         return;
       }
       showStatus(
-        "This is a fictional portfolio demo. No enquiry has been submitted, sent or saved.",
+        "This is a fictional portfolio demo. No enquiry was sent, submitted, booked or saved.",
       );
       status.focus({ preventScroll: true });
     });

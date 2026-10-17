@@ -1,0 +1,13 @@
+{
+  "name": "KILAT MOTORWORKS",
+  "canvas": "#0A0D0C",
+  "surface": "#131716",
+  "surfaceRaised": "#1A211D",
+  "ink": "#F4F5F0",
+  "muted": "#B1B9B0",
+  "signal": "#CDF228",
+  "bronze": "#BD8B57",
+  "border": "#39423C",
+  "fonts": "geometric local sans; licensed Space Grotesk source available",
+  "note": "Contrast and typesetting must be validated; values are design proposals."
+}

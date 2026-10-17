@@ -47,7 +47,7 @@ def configure(root, mode, origin):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--mode', required=True, choices=['staging', 'production'])
-    parser.add_argument('--origin', default='https://rapimotion.ismailstudio.my')
+    parser.add_argument('--origin', default='https://kilatmoto.ismailstudio.my')
     parser.add_argument('--root', type=Path, default=DEFAULT_ROOT)
     parser.add_argument('--check', action='store_true', help='Check files without modifying them')
     args = parser.parse_args()

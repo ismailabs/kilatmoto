@@ -40,7 +40,7 @@ if __name__ == '__main__':
     parser.add_argument('--port', type=int, default=8000)
     args = parser.parse_args()
     server = PreviewServer(('127.0.0.1', args.port), partial(Handler, directory=str(ROOT)))
-    print(f'RAPI MOTION preview: http://127.0.0.1:{args.port}/ — Ctrl+C to stop', flush=True)
+    print(f'KILAT MOTORWORKS preview: http://127.0.0.1:{args.port}/ — Ctrl+C to stop', flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:

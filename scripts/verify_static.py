@@ -8,6 +8,7 @@ from collections import Counter
 import argparse
 import re
 import xml.etree.ElementTree as ET
+import json
 from configure_seo import configure
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,7 +49,7 @@ def main():
     issues = []; scans = {}; targets = set()
     def check(condition, message):
         if not condition: issues.append(message)
-    actual_pages = sorted(str(p.relative_to(ROOT)).replace('\\', '/') for p in ROOT.rglob('index.html') if '.git' not in p.parts)
+    actual_pages = sorted(str(p.relative_to(ROOT)).replace('\\', '/') for p in ROOT.rglob('index.html') if not any(x in p.parts for x in ['.git', 'node_modules', 'dist', 'tmp']))
     check(actual_pages == sorted(PAGES), 'Expected exactly five main page entries')
     for name in PAGES:
         scan = Scan(); source = (ROOT / name).read_text(encoding='utf8'); scan.feed(source); scans[name] = scan
@@ -61,6 +62,8 @@ def main():
         check('Services, projects and enquiries are demonstrations only.' in ' '.join(' '.join(scan.text).split()), f'{name}: missing footer disclosure')
         check(all(n == 1 for n in Counter(scan.ids).values()), f'{name}: duplicate IDs')
         check('https://www.ismailstudio.my/' in source, f'{name}: missing ISMAIL conversion path')
+        check('KILAT MOTORWORKS' in source, f'{name}: missing brand')
+        check(not re.search(r'RAPI MOTION|KILAT MOTO(?!RWORKS)', source), f'{name}: obsolete or incorrect brand')
         for tag, data in scan.tags:
             check(not any(k.lower().startswith('on') for k in data), f'{name}: inline handler')
             if tag == 'img':
@@ -75,7 +78,7 @@ def main():
         for reference in scan.references:
             parts = urlsplit(reference)
             if parts.scheme or parts.netloc:
-                check(parts.scheme == 'https' and parts.netloc == 'www.ismailstudio.my' or 'rapimotion.ismailstudio.my' == parts.netloc,
+                check(parts.scheme == 'https' and parts.netloc in ['www.ismailstudio.my', 'kilatmoto.ismailstudio.my'],
                       f'{name}: unexpected external reference {reference}')
                 continue
             path = ROOT / unquote(parts.path).lstrip('/') if parts.path.startswith('/') else (ROOT / name).parent / unquote(parts.path)
@@ -86,6 +89,20 @@ def main():
             if parts.fragment and path.suffix == '.html':
                 destination = str(path.relative_to(ROOT)).replace('\\', '/')
                 check(parts.fragment in scans[destination].ids, f'{name}: missing anchor {reference}')
+    contract = json.loads((ROOT / 'kilatmoto-Codex-Handoff/data/six-service-contract.json').read_text())
+    service_tags = scans['services/index.html'].tags
+    service_source = (ROOT / 'services/index.html').read_text(encoding='utf8')
+    contact_source = (ROOT / 'contact/index.html').read_text(encoding='utf8')
+    for item in contract['services']:
+        check(item['id'] in scans['services/index.html'].ids, f'Missing service {item["id"]}')
+        check(item['name'] in ''.join(scans['services/index.html'].text), f'Missing service label {item["name"]}')
+        check(f'/contact/?service={item["id"]}' in service_source, f'Missing demo mapping {item["id"]}')
+        check(f'value="{item["id"]}"' in contact_source, f'Missing demo option {item["id"]}')
+    project_contract = {'urban':'exterior', 'executive':'refinement', 'family':'interior', 'coupe':'refinement', 'daily':'maintenance', 'electric':'protection'}
+    actual = {d.get('id'):d.get('data-category') for t,d in scans['projects/index.html'].tags if t=='article' and 'project-card' in d.get('class','')}
+    check(actual == project_contract, 'Six project IDs and filter associations must match baseline')
+    titles = json.loads((ROOT / 'kilatmoto-Codex-Handoff/data/six-project-contract.json').read_text())['source_observed_section_headings']
+    for title in titles: check(title in ''.join(scans['projects/index.html'].text), f'Missing project title {title}')
     css = (ROOT / 'assets/css/styles.css').read_text(encoding='utf8')
     for url in re.findall(r'url\([\'"]?([^\'"\)]+)', css):
         check((ROOT / url.lstrip('/')).is_file(), f'CSS missing resource {url}'); targets.add(url)
@@ -95,7 +112,7 @@ def main():
     check('connect-src \'none\'' in (ROOT / '_headers').read_text(), 'Missing network safety header')
     ET.fromstring((ROOT / 'sitemap.xml').read_text())
     mode = 'staging' if scans['index.html'].metadata['robots'][0].startswith('noindex') else 'production'
-    for path, expected in configure(ROOT, mode, 'https://rapimotion.ismailstudio.my').items():
+    for path, expected in configure(ROOT, mode, 'https://kilatmoto.ismailstudio.my').items():
         check(path.read_text(encoding='utf8') == expected, f'Inconsistent {mode} SEO: {path.name}')
     targets |= {'/favicon.svg', '/robots.txt', '/sitemap.xml', '/og-image.webp'}
     if args.base_url:

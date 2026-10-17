@@ -1,82 +1,35 @@
-# RAPI MOTION — verification record
+# KILAT MOTORWORKS — measured verification
 
-**15 October 2026.** Five-page fictional automotive portfolio, implemented and tested locally. No Cloudflare deployment, DNS edit or domain activation was performed. These results replace the previous package's isolated-document test claims.
+17 October 2026. Latest release identity and production verdict are recorded in `kilatmoto-Codex-Handoff/16-RELEASE-REPORT.md`. Historical RAPI MOTION results are available through Git; they are not KILAT evidence.
 
-## Audit and visual direction
+## Implemented design and comparison
 
-The supplied site was already at the project root. Its `/assets/` paths worked over HTTP; opening `index.html` through `file://` explained the apparent missing styling. Its pale/blue presentation, oversized capital headings and pill controls differed substantially from the approved RAPI reference. All five pages now use charcoal, lime, white, compact typography, rectangular controls, considered imagery and restrained borders.
+The precise 1440px/390px Home and Services references and primary concept board guided the cinematic dark car, warm lighting, lime/graphite palette, stacked brand, three-line Home headline, rectangular actions and six-service grid. No reference board is rendered as webpage content. Wrong KILAT MOTO names, invented metrics and fictitious business contacts were excluded.
 
-The five-page RAPI composite was the primary visual reference; the unrelated PRIME hero provided secondary automotive mood context. Actual browser captures were visually compared for palette, hierarchy, imagery, section rhythm and card density. About's worker crop, the interior service image and mobile typography were refined after rendering. This was a qualitative comparison: the small composite cannot support a reliable pixel-difference fidelity score. No reference image is presented as implemented output.
+Actual local HTTP screenshots under `qa-artifacts/local-*.png` were inspected. Desktop Home preserves the split hero and four-part value strip; mobile uses the supplied portrait crop, stacked actions and single-column service cards. Services preserves all six names with fuller descriptions, suitability, care limitations and demo links, making it longer than the reference overview. Its interior illustration depicts a cabin, rather than copying the mockup's mismatched polishing image. About, Projects and Contact share the tested system. The creator section is a deliberate lime editorial interval with a distinct genuine ISMAIL CTA.
 
-## Structural and HTTP checks
+Initial too-early top captures showed lazy-image placeholders; final full-page captures force decoding and the Services top capture was replaced after decoding. These are screenshot timing artifacts, not evidence that empty placeholders are intended design.
 
-```powershell
-py scripts/serve.py --port 8001
-py scripts/verify_static.py --base-url http://127.0.0.1:8001
-py scripts/configure_seo.py --mode staging --check
-node --check assets/js/main.js
-```
+## Structural, HTTP and safety
 
-**PASS: five pages, 165 references and 25 actual HTTP targets.** The checker validates distinct titles/descriptions, heading hierarchy, IDs, internal paths/anchors/srcsets, image alt text/dimensions, disclosures, ISMAIL links, sitemap XML, consistent SEO mode and the frontend-only safety boundary. All checked HTTP resources returned nonempty 200 responses. JavaScript syntax passed.
+`py scripts/verify_static.py --base-url http://127.0.0.1:8000` passed: five pages, 174 references, 26 actual HTTP targets, exact service names/IDs and demo mappings, six baseline project/filter associations, six concept titles, semantic structure, links, image alt/dimensions and SEO consistency. `node --check assets/js/main.js` passed. Handoff asset validation passed using the bundled Python/Pillow runtime; system Python lacks Pillow.
 
-The real ISMAIL destination remains `https://www.ismailstudio.my/`; a direct HTTPS HEAD request returned **200**. No analytics, booking endpoint, remote font, map embed or runtime image hotlink was added.
+The enquiry has no form, send endpoint, fetch/XHR/beacon, cookies or storage. Browser instrumentation observed **zero network requests** during empty, invalid and valid demo interactions and no localStorage/sessionStorage/cookies. `connect-src 'none'` and `form-action 'none'` reinforce this boundary. ISMAIL's apex redirects to https://www.ismailstudio.my/ and returns HTTP 200 with the expected portfolio title; site CTAs use that final destination.
 
-## Real browser coverage
+## Actual browser and accessibility
 
-Delivered HTML was navigated through local HTTP at ports 8000 and 8001 in Codex's in-app Chromium. Port 8001 emulated the global security headers. CSS, JavaScript, font and images loaded normally. There was no `set_content`, resource embedding or simulated execution.
+Microsoft Edge/Chromium via Playwright, real HTTP pages. `qa-artifacts/local-browser-evidence.json` records **173 successful checks**, **40 route/viewport combinations** at 320/375/390/430/768/1024/1440/1920px, **zero browser errors**, and **zero axe violations across ten audits** (all five routes at 390px and 1440px, WCAG 2 A/AA, 2.1 AA and 2.2 AA rule tags).
 
-All five routes passed at requested viewports **320×740, 375×812, 430×932, 768×1024, 1024×768, 1440×1000 and 1920×1080**: **35 combinations** without horizontal document overflow. Classic scrollbars sometimes reduce content width by 15px; evidence records actual client width. Final Home/About/Contact checks used a 375px content width, followed by a narrow 320px requested-width regression on all five pages after the final line-break adjustment.
+Coverage includes desktop navigation; mobile keyboard menu opening, first-link focus, Escape and focus restoration; all six filters and result counts; gallery opening, Tab/Shift+Tab containment and Escape return; all six service query mappings; empty/invalid-email/valid demo feedback and focus; native FAQ keyboard expansion; no-JavaScript five-route navigation, all projects, original-image links and unavailable demo fallback; reduced-motion emulation; 200% CSS zoom/reflow at 640px and 960px windows on all five routes. The enlargement check exposed intrinsic overflow in headings and the value strip; safeguards fixed it before the successful run. CSS zoom is a reflow stress test, not a claim of a physical-browser toolbar zoom audit.
 
-All five desktop navigation links were clicked successfully. Final website warning/error logs were empty. Separate automation-tool telemetry errors were not site requests or website console errors.
+Automated zero violations are not WCAG certification. Physical phones, Safari, Firefox, screen readers and real touch ergonomics were not tested. Screenshots cover desktop/mobile; performance is lab data, not field Core Web Vitals.
 
-**19 functional assertions passed:** keyboard mobile menu opening/focus/Escape/navigation; six project filters with counts 1/1/2/1/1/6; keyboard image opening, Tab containment and Escape focus restoration; service-query selection; empty and invalid-email focus/feedback; valid demo response/status focus; keyboard FAQ expansion. The first gallery test exposed Tab leaving its single control; that defect was fixed and retested.
+## Local performance
 
-The enquiry has no HTML form, action, endpoint, fetch/XHR/beacon or persistence code. Header policies `connect-src 'none'` and `form-action 'none'` reinforce that boundary. The browser verified the explicit unsent/unsaved demo response. A resource-timing counter was unavailable in the automation scope; an instrumented zero-request measurement is **not** claimed.
+Lighthouse **13.5.0** with installed headless Edge. Mobile uses default simulated mobile throttling; desktop uses the recorded desktop settings. `qa-artifacts/local-performance-summary.json` contains actual timestamps, settings/results and failed-audit explanations. Measured Home mobile: performance **81**, accessibility **100**, best practices **100**, SEO **58**, LCP **2.229s**, CLS **0.07324**, TBT **615.84ms**. Desktop: **95/100/100/58**, LCP **0.729s**, CLS **0**, TBT **0ms**. These staging runs overlapped browser QA; CPU contention may affect results. No causal improvement claim is made.
 
-No-JavaScript navigation, visible projects, ordinary gallery links and native disclosures are supported by source design and inspection; a separately configured browser session with JavaScript disabled was unavailable. Reduced-motion CSS is present; OS preference emulation was not performed.
+Staging SEO is deliberately noindex. Lighthouse's robots.txt audit also encounters the restrictive connect-src policy. Direct HTTP/source robots checks pass; the security policy was not weakened for an audit score. Final production lab measurements and indexability checks belong in the release report.
 
-## Accessibility and performance
+## Publication safeguards
 
-**Lighthouse 13.5.0**, CLI, installed headless Microsoft Edge, actual local HTTP. Mobile used default simulated mobile throttling; desktop used its desktop preset. Inner pages were audited for accessibility and best practices. Results are local lab measurements, not certification or field data.
-
-| Page / run | Performance | Accessibility | Best practices | SEO |
-|---|---:|---:|---:|---:|
-| Home, mobile after image optimisation | **97** | **100** | **100** | 58 |
-| Home, desktop earlier in this revision | **95** | **100** | **100** | 66 |
-| About | Not measured | **100** | **100** | Not measured |
-| Services, successful final rerun | Not measured | **100** | **100** | Not measured |
-| Projects | Not measured | **100** | **100** | Not measured |
-| Contact | Not measured | **100** | **100** | Not measured |
-
-Final mobile Home: **LCP 2.40s, CLS 0.0605, TBT 32ms**. Earlier desktop Home: **LCP 0.83s, CLS 0, TBT 156ms**. Earlier mobile scores were 86–87; the final run followed smaller image derivatives and recompression. Machine load and lab variability also affect scores. A small mobile line-break fix followed these audits and received browser regression checks, not another performance audit. No INP or real-user Core Web Vitals were measured.
-
-One initial Services audit encountered a transient local connection refusal. The asset returned 200 directly; the helper's concurrent request backlog was increased and the rerun passed at 100/100. A logo label/name discrepancy was corrected by deriving its accessible name from visible text.
-
-SEO scores are deliberately limited by staging `noindex`. The headered run also reported “robots.txt is not valid” with the explanation **“Fetch of robots.txt failed … CSP violation”**, because `connect-src 'none'` blocked its audit fetch. Direct HTTP retrieval and structural robots validation passed. Security was not loosened to change the score.
-
-## SEO and headers
-
-Delivered source is **staging**: five meta directives and the global header say `noindex, follow`; robots allows crawling to read that directive; sitemap is valid, empty and unadvertised; no production canonical or `og:url` asserts an active hostname. Semantic content, descriptions and social artwork are complete.
-
-The production transition was executed and checked in an isolated copy, then reversed there. It prepares five unique HTTPS canonicals, matching Open Graph URLs, absolute social images, a five-route sitemap, robots sitemap declaration and removal of the staging header while retaining security. Working source stays staging. The script never deploys or changes DNS.
-
-The helper emulated this project's global `_headers` policy, including CSP, frame restrictions, content-type protection and staging indexing. Actual Cloudflare processing, HTTPS, CDN behaviour and public social previews require later launch verification.
-
-## Evidence and publication
-
-`qa-screenshots/evidence.json` contains responsive observations, the 19 assertions, navigation results and compact Lighthouse records with tool versions, timings and limitations. WebP screenshots were converted from actual HTTP JPEG captures without altering rendered content:
-
-- `desktop-home.webp`, `desktop-about.webp`, `desktop-services.webp`, `desktop-projects.webp`, `desktop-contact.webp`: full pages at requested 1440×1000.
-- `mobile-home.webp`, `mobile-about.webp`, `mobile-contact.webp`: full pages at 375×812. Native lazy images were brought into view before the final Home capture; initial too-fast captures were replaced.
-- `home-preview.webp`: desktop Home viewport overview.
-
-The folder initially lacked its own Git metadata and inherited an unrelated ancestor repository. An independent repository was initialised inside this project, leaving the ancestor untouched. The exact authorised GitHub destination existed, was writable and contained no refs before publication. No alternate repository or history rewrite was used. The staged 58-file package passed whitespace, forbidden-path and custom secret-pattern checks (private keys, common provider tokens, JWTs and assigned secret literals). Gitleaks was unavailable; this is not a claim of a Gitleaks audit. Credentials, caches and temporary generation/audit files are excluded. The completion report provides the verified pushed commit.
-
-## Remaining limits
-
-- No known blocking defect remains in tested flows. Automated coverage does not establish complete accessibility/browser conformance.
-- Physical phones, Safari, Firefox, screen readers, browser text zoom and real touch ergonomics were not independently tested.
-- No formal WCAG audit, hosted performance measurement, field data, conversion rate or indexing evidence exists.
-- Vehicle stories and studio imagery are fictional; no real staff/customer claims, prices, address, hours or treatment guarantees exist.
-- Real enquiry delivery, booking, payment and persistence are intentionally absent.
-- Pages, authoritative DNS, the planned hostname, certificates and production indexing remain future work documented in `DEPLOYMENT.md`.
+A feature branch retains the original commit ancestry. New Worker config targets only `kilatmoto` and its named custom domain. Builds copy only public files into an ignored `dist/` output; a Wrangler dry run passed with 63 files and no bindings. The old main-branch Worker build trigger was replaced with a trigger on the new Worker before publication. The original Worker and domain remain live, without a new redirect. Custom staged secret-pattern/path/whitespace scanning is recorded separately; it is not Gitleaks.

@@ -1,0 +1,17 @@
+{
+  "production_origin": "https://kilatmoto.ismailstudio.my",
+  "routes": [
+    "/",
+    "/about/",
+    "/services/",
+    "/projects/",
+    "/contact/"
+  ],
+  "old_host_redirect": false,
+  "old_host": "https://rapimotion.ismailstudio.my",
+  "worker": "kilatmoto",
+  "source_worker": "rapimotion",
+  "github": "ismailabs/kilatmoto",
+  "source_github": "ismailabs/rapi-motion",
+  "display_brand": "KILAT MOTORWORKS"
+}

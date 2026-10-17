@@ -1,99 +1,33 @@
-# Future deployment — GitHub → Cloudflare Pages
+# KILAT MOTORWORKS — Workers deployment
 
-**No deployment or DNS changes are part of this delivery.** These instructions are for a later authorised launch. The planned domain is `rapimotion.ismailstudio.my`; no `pages.dev` hostname or authoritative DNS provider is assumed.
+The existing repository was renamed from `ismailabs/rapi-motion` to `ismailabs/kilatmoto`, preserving repository ID 1420850462 and baseline commit d47f3eafff97f0c8fa6ee026e013e1430c70b9fd. The local folder name may remain `rapi-motion`.
 
-## 1. Check the delivered repository
+## Actual infrastructure
 
-Open [ismailabs/rapi-motion](https://github.com/ismailabs/rapi-motion). The five page entry points must be at the root and in `about/`, `services/`, `projects/`, `contact/`, with `assets/` beside the root entry. Do not create another repository or add an enclosing website folder.
+The original site uses Worker `rapimotion`, Static Assets and custom domain `rapimotion.ismailstudio.my`. The account has zero Pages projects. The new release uses Worker `kilatmoto` and `kilatmoto.ismailstudio.my`. These are separate services. The original Worker/domain stays published with no new redirect, retaining its prior noindex policy.
 
-From the checkout:
+A preflight inventory is saved in `qa-artifacts/infrastructure-baseline.json`. The old Worker version is `543c3245-7ab5-4e50-a867-9f2bf48b97a1` (deployment `142436c7-1f76-45ef-ad25-9dcd46dc4dc9`). No old-host DNS record was deleted.
 
-```powershell
-git status --short --branch
-git remote -v
-git log -1 --oneline
-py scripts/verify_static.py
-py scripts/configure_seo.py --mode staging --check
-py scripts/serve.py
-```
+The former main-branch build trigger was retired to prevent accidental deployment to the old Worker. Its successor targets the new Worker and the same stable GitHub repository ID. The repository connection name was updated to `kilatmoto`. The existing Cloudflare-managed build-token reference is retained; no token value is stored here. Consult the release report for build/deploy receipts.
 
-Open http://localhost:8000/ and test every route. Confirm the demo sends nothing. Stop with Ctrl+C. Keep staging SEO active during initial hosting review.
+## Controlled publication
 
-## 2. Create the Pages connection when authorised
+1. Run source, browser, accessibility and performance checks; inspect screenshots.
+2. Build using `npm run build`. Only the public allowlist enters `dist/`.
+3. Use `npx wrangler deploy --dry-run` to validate config/output.
+4. Publish a clean, reviewed commit using the authenticated Cloudflare Workers Builds connection or `npm run deploy` when local Wrangler is authenticated. Local `wrangler whoami` was unauthenticated during this release; the connected API is the authorized publication path.
+5. Deploy staging/noindex first, then verify HTTPS and all five routes on the custom domain.
+6. Run `py scripts/configure_seo.py --mode production --origin https://kilatmoto.ismailstudio.my`, verify with `--check`, review, commit and publish.
+7. Independently compare local HEAD, origin/main, advertised Git remote, hosted release.json, X-Release-SHA and Worker deployment/version. Test actual response headers; source `_headers` alone is insufficient.
 
-Cloudflare dashboard → **Workers & Pages → Create application → Pages → Import an existing Git repository**. Select GitHub and grant the integration access to the existing `ismailabs/rapi-motion` repository. Select that exact repository and begin setup. Dashboard wording may change.
+Cloudflare Workers Static Assets currently supports `_headers` on asset responses. This configuration is assets-only: no custom Worker fetch handler intercepts those responses. `workers_dev` and preview URLs are disabled, and only the intended custom domain is configured. No old-host redirect exists in the source or configuration. Custom-domain binding manages its own DNS; do not add a Pages CNAME.
 
-| Setting | Value |
-|---|---|
-| Production branch | `main` |
-| Framework preset | None |
-| Root directory | Repository root / blank |
-| Build command | `exit 0` (no compilation) |
-| Build output directory | `.` |
-| Environment variables | None |
+## SEO and security
 
-There is no `dist`, `build` or `public` output folder. The checked-in HTML is deployable directly. Cloudflare's [Static HTML guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything/) describes a no-op build and a custom output directory containing the actual site files.
+`configure_seo.py` manages meta robots, unique canonical/og:url, absolute social-image URLs, robots.txt and five-route sitemap. Staging is noindex; production is index/follow. It never deploys. Keep `connect-src 'none'`, `form-action 'none'`, frame restrictions and other security headers. Lighthouse's browser-side robots fetch may be blocked by this CSP; verify robots independently over HTTPS rather than weakening the demo's network boundary.
 
-Review the settings, then deploy only under the later authorisation. Copy the exact assigned `*.pages.dev` URL from the dashboard. Visit `/`, `/about/`, `/services/`, `/projects/`, `/contact/` directly and after refresh. Check images, fonts, menu, filters, viewer and demo feedback. Inspect response headers for CSP and `X-Robots-Tag: noindex, follow`. `_headers` is processed by Pages, not embedded in HTML; the local helper only emulates this project's one global rule. See the [official header guide](https://developers.cloudflare.com/pages/configuration/headers/).
+## Rollback
 
-Git-connected Pages normally deploys subsequent pushes automatically. Review deployment triggers before future pushes once this connection exists.
+For a defective new release, use Cloudflare's Worker version/deployment history to restore the last verified `kilatmoto` version, then verify its release SHA and all routes. The previous `rapimotion` Worker remains independent and available. Do not redirect the old hostname, change unrelated DNS, force-push or delete history. To restore the original build trigger only if explicitly needed, recreate it against the saved original Worker tag/repository connection with original build command empty and deploy command `npx wrangler deploy`; do not let that old trigger consume the new `kilatmoto` config.
 
-## 3. Find the authoritative DNS provider
-
-Being registered at Exabytes does not establish where DNS is hosted. Inspect the domain's nameservers in the registrar account, or run:
-
-```powershell
-nslookup -type=NS ismailstudio.my 1.1.1.1
-```
-
-Names ending in `ns.cloudflare.com` indicate Cloudflare nameservers. Otherwise identify the actual provider from the returned records and account. Do not switch nameservers merely to connect this subdomain, and do not alter existing apex-domain or unrelated service records.
-
-## 4. Associate the custom subdomain when authorised
-
-First open **the correct Pages project → Custom domains → Set up a domain** and enter `rapimotion.ismailstudio.my`. Associate it in Pages before configuring DNS. Cloudflare documents that a DNS record alone can fail to route correctly; see [Pages custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/).
-
-If Cloudflare manages the zone, review the record proposed by Pages and avoid duplicates. If Exabytes or another provider is authoritative, create a CNAME in that provider's DNS interface:
-
-| Field | Value |
-|---|---|
-| Type | CNAME |
-| Name | `rapimotion` (or the FQDN if that interface requires it) |
-| Target | The **actual assigned Pages hostname** |
-| TTL | Provider default |
-
-Do not invent the target or replace an existing record without checking its purpose. Avoid duplicate zone suffixes and conflicting A/AAAA records. Cloudflare supports an external-DNS subdomain CNAME; moving the parent zone is not required for this subdomain setup.
-
-Check Pages' domain status and run `nslookup -type=CNAME rapimotion.ismailstudio.my 1.1.1.1`. Wait for DNS and certificate provisioning. Open the custom URL over HTTPS without certificate warnings. Verify all five routes and assets at that actual hostname. Certificate issuance, authoritative DNS and domain availability remain unverified until these steps occur.
-
-## 5. Activate production SEO deliberately
-
-Do this only after launch is authorised and the intended HTTPS custom hostname works. From the repository root:
-
-```powershell
-py scripts/configure_seo.py --mode production --origin https://rapimotion.ismailstudio.my
-py scripts/configure_seo.py --mode production --origin https://rapimotion.ismailstudio.my --check
-py scripts/verify_static.py
-git diff
-```
-
-The script changes source only; it never commits, pushes, deploys or touches DNS. It updates eight files together:
-
-- Five pages: `index, follow`, unique canonical and matching `og:url`, absolute Open Graph and Twitter image URLs.
-- `sitemap.xml`: exactly the five canonical HTTPS routes.
-- `robots.txt`: crawling allowed and the production sitemap advertised.
-- `_headers`: staging's global `X-Robots-Tag` removed; all security restrictions retained.
-
-Review and deliver those exact files through the then-authorised Git workflow. Check the published HTML and HTTP headers after deployment: no production `noindex`; correct canonical on each page; public social image; correct five-entry sitemap and robots declaration. Confirm `pages.dev` previews stay non-indexed through platform controls/headers; do not assume a production configuration protects every alternate hostname. If redirecting the production Pages hostname to the custom domain, configure and verify that separately after the custom domain works.
-
-To restore staging source, use `py scripts/configure_seo.py --mode staging`, followed by `--check` and review. This restores page and header restrictions, removes canonicals/`og:url`, uses local social paths and empties the unadvertised sitemap. Crawling stays allowed so `noindex` can be read. No misleading LocalBusiness, reviews, address or opening-hours markup is included.
-
-## 6. Launch verification
-
-- Test all five routes in desktop and real mobile browsers, including direct nested-route refresh.
-- Check zero missing assets, runtime errors and unwanted horizontal overflow.
-- Verify navigation, focus indicators, gallery keyboard dismissal and demo validation.
-- Confirm the fictional-business disclosures and genuine ISMAIL destination remain clear.
-- Repeat accessibility and performance measurements on hosted HTTPS; local lab results do not prove field performance or WCAG conformance.
-- Verify CSP, domain certificates, redirects, staging restrictions and final production SEO from actual responses.
-
-Do not describe the site as deployed, indexed or domain-verified until those observations exist.
+Completion requires the real evidence in `kilatmoto-Codex-Handoff/16-RELEASE-REPORT.md`; this runbook is not proof of deployment.
