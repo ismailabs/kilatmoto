@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "path": "assets/brand/precision-grid.svg",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/brand/symbol.svg",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/brand/wordmark-dark.svg",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/brand/wordmark-light.svg",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/photos/hero-vehicle-1600.webp",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/photos/hero-vehicle-960.webp",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/photos/hero-vehicle-mobile-900.webp",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/photos/paint-correction-1200.webp",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/photos/paint-correction-720.webp",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/photos/wheel-detail-1200.webp",
+      "matches_supplied_sha256": true
+    },
+    {
+      "path": "assets/photos/wheel-detail-720.webp",
+      "matches_supplied_sha256": true
+    }
+  ],
+  "social_dimensions": [
+    1200,
+    630
+  ],
+  "all_passed": true
+}

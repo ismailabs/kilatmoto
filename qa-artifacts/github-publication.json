@@ -1,0 +1,13 @@
+{
+  "verified_at": "2026-10-17T01:13:27.801457+00:00",
+  "repository_status": 200,
+  "repository_id": 1420850462,
+  "full_name": "ismailabs/kilatmoto",
+  "default_branch": "main",
+  "homepage": "https://kilatmoto.ismailstudio.my/",
+  "pages_status": 404,
+  "baseline_sha": "d47f3eafff97f0c8fa6ee026e013e1430c70b9fd",
+  "local_head": "d4c7faacfb01a25b08b4e3b147d59ca841a83d5b",
+  "tracking_ref": "d4c7faacfb01a25b08b4e3b147d59ca841a83d5b",
+  "advertised_remote": "d4c7faacfb01a25b08b4e3b147d59ca841a83d5b\trefs/heads/main"
+}

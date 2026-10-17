@@ -3,7 +3,7 @@
 A five-page fictional Malaysian automotive detailing website by [ISMAIL](https://www.ismailstudio.my/). Editable HTML, CSS and vanilla JavaScript; no browser framework or third-party runtime requests.
 
 - Source: https://github.com/ismailabs/kilatmoto (renamed in place, history retained).
-- Intended public host: https://kilatmoto.ismailstudio.my/
+- Verified production host: https://kilatmoto.ismailstudio.my/
 - Hosting: Cloudflare Worker `kilatmoto` with Static Assets, not Pages.
 - Release evidence: `kilatmoto-Codex-Handoff/16-RELEASE-REPORT.md` and `qa-artifacts/`.
 
@@ -43,4 +43,4 @@ Edit the five HTML files, shared `assets/css/styles.css` and `assets/js/main.js`
 
 `npm run build` copies only an allowlisted set of public files into `dist/`. It excludes Git metadata, the handoff, docs, node_modules, scripts and QA evidence. `release.json` and `X-Release-SHA` identify the source commit; `dirty` reports tracked local changes at build time. `wrangler.jsonc` deploys that directory to the named Worker/custom domain. See DEPLOYMENT.md for lifecycle and rollback.
 
-Production is intended to be indexable with honest fictional-portfolio metadata. Search-engine inclusion is separate from technical indexability. See the release report for the actual verified state.
+Production is technically indexable with honest fictional-portfolio metadata. Search-engine inclusion is separate from technical indexability. See the release report for the actual verified state.
