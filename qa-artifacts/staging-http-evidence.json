@@ -1,0 +1,662 @@
+{
+  "time": "2026-10-17T00:52:53.006817+00:00",
+  "origin": "https://kilatmoto.ismailstudio.my",
+  "mode": "staging",
+  "expected_sha": "00917e0c33fb96a3a9022d4f6cd52e1a6f307228",
+  "routes": [
+    {
+      "route": "/",
+      "status": 200,
+      "final_url": "https://kilatmoto.ismailstudio.my/",
+      "headers": {
+        "Date": "Sat, 17 Oct 2026 00:52:55 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "17020",
+        "Connection": "close",
+        "CF-Cache-Status": "HIT",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
+        "ETag": "\"7bc10f1d5eca16279926195d949a2f1d\"",
+        "content-security-policy": "default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'",
+        "permissions-policy": "geolocation=(), microphone=(), camera=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "x-release-sha": "00917e0c33fb96a3a9022d4f6cd52e1a6f307228",
+        "x-robots-tag": "noindex, follow",
+        "Server-Timing": "cfEdge;dur=28,cfOrigin;dur=0",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tv6KUQvdgSiGmg5kEmvQqmDF8RoqCzXIInl8u24rBppunwQrac4ZkggtfaS2SjqZ3uh%2FeTYL72vddhrKlELNHKkfkTJRlGlIJI8JlkkRtEvMxPkZO%2BI%2BOjv46kZ4NJH0cgUuVA0dKnlhpUonFnjElZ9MGKWFMfeG\"}]}",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Server": "cloudflare",
+        "CF-RAY": "a4bb52c5699df902-SIN",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "title": "\n      Precision in every finish. | KILAT MOTORWORKS \u2014 Fictional Concept\n    ",
+      "robots": [
+        "noindex, follow"
+      ],
+      "body_sha256": "d85e033b7e68681f2cfcc8abeb4c85dca5e069b2f21060d2f09fd97c8d8b4944"
+    },
+    {
+      "route": "/about/",
+      "status": 200,
+      "final_url": "https://kilatmoto.ismailstudio.my/about/",
+      "headers": {
+        "Date": "Sat, 17 Oct 2026 00:52:55 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "9176",
+        "Connection": "close",
+        "CF-Cache-Status": "HIT",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
+        "ETag": "\"c9bf7d06b061bfe5bf95e96143cada06\"",
+        "content-security-policy": "default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'",
+        "permissions-policy": "geolocation=(), microphone=(), camera=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "x-release-sha": "00917e0c33fb96a3a9022d4f6cd52e1a6f307228",
+        "x-robots-tag": "noindex, follow",
+        "Server-Timing": "cfEdge;dur=37,cfOrigin;dur=0",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=%2B9fZcKzUSxtzLr6Me%2B7yLkqXzaWpkglhpCIc6g0EpJvrpw9RPGXUEHghEQhEPSWIYBKh%2BYm%2BqSYp8KEhs%2Fm0JmIlbvjje9W6Yjm1BQGEAVk6zQWTM7UvTZtyyaIx0PgsUCWAuT8uxhPDiu2cWppXqEHSvQPnw3f8\"}]}",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Server": "cloudflare",
+        "CF-RAY": "a4bb52c6ca09d47b-SIN",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "title": "The approach | KILAT MOTORWORKS \u2014 Fictional Concept",
+      "robots": [
+        "noindex, follow"
+      ],
+      "body_sha256": "7c37ce4d9d362325abf47e4812b2cf67f4c75b5b4cc939aea35b99747dabe4e7"
+    },
+    {
+      "route": "/services/",
+      "status": 200,
+      "final_url": "https://kilatmoto.ismailstudio.my/services/",
+      "headers": {
+        "Date": "Sat, 17 Oct 2026 00:52:55 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "19863",
+        "Connection": "close",
+        "CF-Cache-Status": "HIT",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
+        "ETag": "\"b831ad805b4befae15388b0e5d9ac5aa\"",
+        "content-security-policy": "default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'",
+        "permissions-policy": "geolocation=(), microphone=(), camera=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "x-release-sha": "00917e0c33fb96a3a9022d4f6cd52e1a6f307228",
+        "x-robots-tag": "noindex, follow",
+        "Server-Timing": "cfEdge;dur=47,cfOrigin;dur=0",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=HBulp1LJJevI%2BN5g%2FcBwHoiTsAneN2U7nMUKEF7nV5LhzOvqqh3%2FetTuSOXNwmGOWm9lxvT1Z6pIAIkHSUBvwYwuuEY6rG%2Ft%2BfzdhjvfTjDKlC7KxOff2JNuMwFwd9xTNRIQ7mZtiAPR4fESSxqAbEyQcKc6Ypxc\"}]}",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Server": "cloudflare",
+        "CF-RAY": "a4bb52c85bac4085-SIN",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "title": "Six care concepts | KILAT MOTORWORKS \u2014 Fictional Concept",
+      "robots": [
+        "noindex, follow"
+      ],
+      "body_sha256": "139764937b0813acfe604cf772873727f354419331a58b45c9914292f7841736"
+    },
+    {
+      "route": "/projects/",
+      "status": 200,
+      "final_url": "https://kilatmoto.ismailstudio.my/projects/",
+      "headers": {
+        "Date": "Sat, 17 Oct 2026 00:52:55 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "18298",
+        "Connection": "close",
+        "CF-Cache-Status": "HIT",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
+        "ETag": "\"cd1c2a8031c74770be5bffbd2472c04f\"",
+        "content-security-policy": "default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'",
+        "permissions-policy": "geolocation=(), microphone=(), camera=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "x-release-sha": "00917e0c33fb96a3a9022d4f6cd52e1a6f307228",
+        "x-robots-tag": "noindex, follow",
+        "Server-Timing": "cfEdge;dur=33,cfOrigin;dur=0",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Uzt8sTWRKKhU0IBjOcHnQijBQ%2B1VPSrlKP7FB8OaqpExOwMGN40lWrIuBDiSK25H%2Fcg%2F5tBolCKmbibQBNrWm7YxUFkZGx8jteumCLPiSOnbUfULHMGKvFgp7W7rXEl5EtyA8OSPHn6g8su5r7HP1q4ntfMWr23x\"}]}",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Server": "cloudflare",
+        "CF-RAY": "a4bb52c9be7f9cce-SIN",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "title": "Six imagined projects | KILAT MOTORWORKS \u2014 Fictional Concept",
+      "robots": [
+        "noindex, follow"
+      ],
+      "body_sha256": "7a2ee79ebc74ab7477c6b6880bdd8284d90840adf3f78d292dbf0696f2ef64b4"
+    },
+    {
+      "route": "/contact/",
+      "status": 200,
+      "final_url": "https://kilatmoto.ismailstudio.my/contact/",
+      "headers": {
+        "Date": "Sat, 17 Oct 2026 00:52:56 GMT",
+        "Content-Type": "text/html",
+        "Content-Length": "13185",
+        "Connection": "close",
+        "CF-Cache-Status": "HIT",
+        "Cache-Control": "public, max-age=0, must-revalidate, no-transform",
+        "ETag": "\"d39ee8107708ba5a819ab13009853ffe\"",
+        "content-security-policy": "default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'",
+        "permissions-policy": "geolocation=(), microphone=(), camera=()",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "DENY",
+        "x-release-sha": "00917e0c33fb96a3a9022d4f6cd52e1a6f307228",
+        "x-robots-tag": "noindex, follow",
+        "Server-Timing": "cfEdge;dur=27,cfOrigin;dur=0",
+        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=DnRpmxrsK5yKtNvWFpgyudj0rjFZHMaQazWTGiJqlxzlZKEDWb0hKIhwifZ1GweFnR3yd9noTqrU1tVLi3RD%2Bt5mpSUBzBz4%2FkEgXXOXvgwXfNxRLz%2BevSF9pDKL6idf8lxdO3I5Yavct%2Be7Do1UXrta3kYcRULm\"}]}",
+        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+        "Server": "cloudflare",
+        "CF-RAY": "a4bb52cadd62fdf0-SIN",
+        "alt-svc": "h3=\":443\"; ma=86400"
+      },
+      "title": "Enquiry demo | KILAT MOTORWORKS \u2014 Fictional Concept",
+      "robots": [
+        "noindex, follow"
+      ],
+      "body_sha256": "1c3415bf4280d61cda8a2dad516f194f1f915967ed49ced4802c85101edb3240"
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/css/styles.css",
+      "status": 200,
+      "bytes": 23959,
+      "sha256": "3e2244f904c4ce376b47dbd9beb4325b060d58a5da561290e1bebef7d542f37b"
+    },
+    {
+      "path": "/assets/fonts/space-grotesk.ttf",
+      "status": 200,
+      "bytes": 69308,
+      "sha256": "3e756954468ff1cb302dae0414262e72f76a67d87bef3fa1f3226cd0fb9b2d85"
+    },
+    {
+      "path": "/assets/images/interior-care.webp",
+      "status": 200,
+      "bytes": 29928,
+      "sha256": "ab6511d3a7d40c803c720611a30f04b870cacc9aa0296891ad9e179965ab030f"
+    },
+    {
+      "path": "/assets/images/project-coupe.webp",
+      "status": 200,
+      "bytes": 84608,
+      "sha256": "1625fd0a3e1af679b24879792bb608f538188da6e691d3805a28945aa89f27e4"
+    },
+    {
+      "path": "/assets/images/project-daily.webp",
+      "status": 200,
+      "bytes": 75300,
+      "sha256": "6ef6d01e064fa6704ee11231e4d904d8efa6a6998896d9da92c78927fec80591"
+    },
+    {
+      "path": "/assets/images/project-electric.webp",
+      "status": 200,
+      "bytes": 70462,
+      "sha256": "009290392851146a705a5b20414b7a388c79dd73b44a1cdfd46fd3d6a1e4d7be"
+    },
+    {
+      "path": "/assets/images/project-executive.webp",
+      "status": 200,
+      "bytes": 57154,
+      "sha256": "0b47bfe97565bb4827e4d4f9c8a5ced37145d566796d2620e42942c239eec30e"
+    },
+    {
+      "path": "/assets/images/project-family.webp",
+      "status": 200,
+      "bytes": 61048,
+      "sha256": "adce824444310bed4d3bacb8e3da439e33dd0b27a4204445a961e4f1ce384f36"
+    },
+    {
+      "path": "/assets/images/project-urban.webp",
+      "status": 200,
+      "bytes": 85830,
+      "sha256": "31731218ff230c53835ed4b741723a67a7c83b51de716831686e1c3f3f606ae7"
+    },
+    {
+      "path": "/assets/js/main.js",
+      "status": 200,
+      "bytes": 5534,
+      "sha256": "9575e26800a72e0c5ac0520e376f2056333addf8ecf68c26a8a04c1de502ff7b"
+    },
+    {
+      "path": "/assets/photos/hero-vehicle-1600.webp",
+      "status": 200,
+      "bytes": 180726,
+      "sha256": "13f546af52955a3f600e3f658bc8a8e3ec702d51d3de14b26747926347689d75"
+    },
+    {
+      "path": "/assets/photos/hero-vehicle-960.webp",
+      "status": 200,
+      "bytes": 79008,
+      "sha256": "bef75115659ba0d84fa2228618e81c862263a65fbf8d75404085e674cc18157b"
+    },
+    {
+      "path": "/assets/photos/hero-vehicle-mobile-900.webp",
+      "status": 200,
+      "bytes": 121598,
+      "sha256": "0dad2fb0887b324f5ea618b61119b7046ce6d882c045a00a293075bb29704ce9"
+    },
+    {
+      "path": "/assets/photos/paint-correction-1200.webp",
+      "status": 200,
+      "bytes": 91056,
+      "sha256": "8de384b0cf23669e0bb47fbbf6036eb099845014457cd3ce637ac3e9aa8bccc9"
+    },
+    {
+      "path": "/assets/photos/paint-correction-720.webp",
+      "status": 200,
+      "bytes": 44086,
+      "sha256": "9b238db02a6c8fdf80929b6a55a5d41ad0c5dcb9906d1a7d69fd81e695835756"
+    },
+    {
+      "path": "/assets/photos/wheel-detail-1200.webp",
+      "status": 200,
+      "bytes": 144616,
+      "sha256": "cf9fe2257aa6634be5005a908aa5ecef9714b3e00698d306e5c16988927c6a46"
+    },
+    {
+      "path": "/assets/photos/wheel-detail-720.webp",
+      "status": 200,
+      "bytes": 65386,
+      "sha256": "069ca6258c48842b5951b9550620ae6afb2c3f088f2b0f1ca5cd93c2c5959601"
+    },
+    {
+      "path": "/favicon.svg",
+      "status": 200,
+      "bytes": 251,
+      "sha256": "ad3ccabbcbcd3a16117c5af89b4409cdda49a9a51fd4ffbe63ff3d1efa50797d"
+    }
+  ],
+  "checks": [
+    {
+      "name": "/ direct 200",
+      "pass": true
+    },
+    {
+      "name": "/ content matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/ release header",
+      "pass": true
+    },
+    {
+      "name": "/ only local application script",
+      "pass": true
+    },
+    {
+      "name": "/ brand and fictional disclosure",
+      "pass": true
+    },
+    {
+      "name": "/ security policies",
+      "pass": true
+    },
+    {
+      "name": "/ staging noindex",
+      "pass": true
+    },
+    {
+      "name": "/about/ direct 200",
+      "pass": true
+    },
+    {
+      "name": "/about/ content matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/about/ release header",
+      "pass": true
+    },
+    {
+      "name": "/about/ only local application script",
+      "pass": true
+    },
+    {
+      "name": "/about/ brand and fictional disclosure",
+      "pass": true
+    },
+    {
+      "name": "/about/ security policies",
+      "pass": true
+    },
+    {
+      "name": "/about/ staging noindex",
+      "pass": true
+    },
+    {
+      "name": "/services/ direct 200",
+      "pass": true
+    },
+    {
+      "name": "/services/ content matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/services/ release header",
+      "pass": true
+    },
+    {
+      "name": "/services/ only local application script",
+      "pass": true
+    },
+    {
+      "name": "/services/ brand and fictional disclosure",
+      "pass": true
+    },
+    {
+      "name": "/services/ security policies",
+      "pass": true
+    },
+    {
+      "name": "/services/ staging noindex",
+      "pass": true
+    },
+    {
+      "name": "/projects/ direct 200",
+      "pass": true
+    },
+    {
+      "name": "/projects/ content matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/projects/ release header",
+      "pass": true
+    },
+    {
+      "name": "/projects/ only local application script",
+      "pass": true
+    },
+    {
+      "name": "/projects/ brand and fictional disclosure",
+      "pass": true
+    },
+    {
+      "name": "/projects/ security policies",
+      "pass": true
+    },
+    {
+      "name": "/projects/ staging noindex",
+      "pass": true
+    },
+    {
+      "name": "/contact/ direct 200",
+      "pass": true
+    },
+    {
+      "name": "/contact/ content matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/contact/ release header",
+      "pass": true
+    },
+    {
+      "name": "/contact/ only local application script",
+      "pass": true
+    },
+    {
+      "name": "/contact/ brand and fictional disclosure",
+      "pass": true
+    },
+    {
+      "name": "/contact/ security policies",
+      "pass": true
+    },
+    {
+      "name": "/contact/ staging noindex",
+      "pass": true
+    },
+    {
+      "name": "/assets/css/styles.css asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/fonts/space-grotesk.ttf asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/images/interior-care.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/images/project-coupe.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/images/project-daily.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/images/project-electric.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/images/project-executive.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/images/project-family.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/images/project-urban.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/js/main.js asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/photos/hero-vehicle-1600.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/photos/hero-vehicle-960.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/photos/hero-vehicle-mobile-900.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/photos/paint-correction-1200.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/photos/paint-correction-720.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/photos/wheel-detail-1200.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/assets/photos/wheel-detail-720.webp asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/favicon.svg asset matches committed source",
+      "pass": true
+    },
+    {
+      "name": "Hosted release manifest clean matching SHA",
+      "pass": true
+    },
+    {
+      "name": "/robots.txt matches committed source",
+      "pass": true
+    },
+    {
+      "name": "/sitemap.xml matches committed source",
+      "pass": true
+    },
+    {
+      "name": "Old host no redirect to new host",
+      "pass": true
+    },
+    {
+      "name": "Old host remains original noindex site",
+      "pass": true
+    },
+    {
+      "name": "/.git/config not published",
+      "pass": true
+    },
+    {
+      "name": "/README.md not published",
+      "pass": true
+    },
+    {
+      "name": "/kilatmoto-Codex-Handoff/00-START-HERE.md not published",
+      "pass": true
+    },
+    {
+      "name": "/scripts/build.mjs not published",
+      "pass": true
+    },
+    {
+      "name": "/node_modules/ not published",
+      "pass": true
+    },
+    {
+      "name": "/not-a-route/ not published",
+      "pass": true
+    },
+    {
+      "name": "TLS hostname and trust chain verified",
+      "pass": true
+    }
+  ],
+  "release": {
+    "brand": "KILAT MOTORWORKS",
+    "repository": "ismailabs/kilatmoto",
+    "git_sha": "00917e0c33fb96a3a9022d4f6cd52e1a6f307228",
+    "dirty": false,
+    "built_at": "2026-10-17T00:52:25.343Z"
+  },
+  "/robots.txt": "User-agent: *\nAllow: /\n# Staging: HTML and HTTP headers carry noindex. Crawling remains allowed.\n",
+  "/sitemap.xml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n</urlset>\n",
+  "old_host_http": {
+    "status": 403,
+    "headers": {
+      "Date": "Sat, 17 Oct 2026 00:53:02 GMT",
+      "Content-Type": "text/plain; charset=UTF-8",
+      "Content-Length": "17",
+      "Connection": "close",
+      "Cache-Control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+      "Expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+      "Referrer-Policy": "same-origin",
+      "Server-Timing": "cfEdge;dur=17,cfOrigin;dur=0",
+      "X-Frame-Options": "SAMEORIGIN",
+      "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=gZF3eMc57nUrYDeFxfxE4uix%2FpcoV57JFZ32hxWWwUan1izdK7cHVuacGiyLF7qCeZn6YpN9YURR9RluP%2F2zFWzII12bq93tt7rxjblw%2BhLozAWP7Pk8lUYJPfqJTnzu8WAzBGPuWkuH8m3QloWZxvZ2bK2JQkwqlQ%3D%3D\"}]}",
+      "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "Server": "cloudflare",
+      "CF-RAY": "a4bb52f008e3a081-SIN",
+      "alt-svc": "h3=\":443\"; ma=86400"
+    }
+  },
+  "old_host_browser": {
+    "time": "2026-10-17T00:53:08.507Z",
+    "status": 200,
+    "final_url": "https://rapimotion.ismailstudio.my/",
+    "request_chain": [
+      "https://rapimotion.ismailstudio.my/"
+    ],
+    "headers": {
+      "alt-svc": "h3=\":443\"; ma=86400",
+      "cache-control": "public, max-age=0, must-revalidate",
+      "cf-cache-status": "HIT",
+      "cf-ray": "a4bb531f2f3efe0d-SIN",
+      "content-encoding": "zstd",
+      "content-security-policy": "default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none'",
+      "content-type": "text/html",
+      "date": "Sat, 17 Oct 2026 00:53:09 GMT",
+      "nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+      "permissions-policy": "geolocation=(), microphone=(), camera=()",
+      "priority": "u=0,i",
+      "referrer-policy": "strict-origin-when-cross-origin",
+      "report-to": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=J2Y%2FBbuH1A%2F9Vw3VuTW1ik6Njy9%2BbLR0F1U8D5iiefflsDCI9rQTwRmGrjGOtxDTUUqHDGJa0FXHxnDN8s1SsRRrrDo%2F1wC%2Bye8h548XqiTPUKfeVXalSAVyqoMsxzLC%2B983aYAdzd2PLVw%2BoOR0%2Fu%2BHI2cf%2B4S6Xg%3D%3D\"}]}",
+      "server": "cloudflare",
+      "server-timing": "cfCacheStatus;desc=\"HIT\", cfEdge;dur=34,cfOrigin;dur=0, cfExtPri",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "DENY",
+      "x-robots-tag": "noindex, follow"
+    },
+    "title": "RAPI MOTION \u00e2\u20ac\u201d Your Drive. Refined. | Fictional Detailing Concept",
+    "robots": "noindex, follow"
+  },
+  "dns_addresses": [
+    "104.21.77.234",
+    "172.67.212.148",
+    "2606:4700:3034::6815:4dea",
+    "2606:4700:3036::ac43:d494"
+  ],
+  "tls": {
+    "version": "TLSv1.3",
+    "certificate": {
+      "subject": [
+        [
+          [
+            "commonName",
+            "ismailstudio.my"
+          ]
+        ]
+      ],
+      "issuer": [
+        [
+          [
+            "countryName",
+            "US"
+          ]
+        ],
+        [
+          [
+            "organizationName",
+            "Google Trust Services"
+          ]
+        ],
+        [
+          [
+            "commonName",
+            "WE1"
+          ]
+        ]
+      ],
+      "version": 3,
+      "serialNumber": "89D0B79594C4C63B0EAFA07746AADE2E",
+      "notBefore": "Oct 16 23:50:15 2026 GMT",
+      "notAfter": "Jan 15 00:50:10 2027 GMT",
+      "subjectAltName": [
+        [
+          "DNS",
+          "ismailstudio.my"
+        ],
+        [
+          "DNS",
+          "kilatmoto.ismailstudio.my"
+        ],
+        [
+          "DNS",
+          "*.kilatmoto.ismailstudio.my"
+        ]
+      ],
+      "caIssuers": [
+        "http://i.pki.goog/we1.crt"
+      ],
+      "crlDistributionPoints": [
+        "http://c.pki.goog/we1/hm-9r5EV2Vw.crl"
+      ]
+    }
+  },
+  "issues": []
+}

@@ -1,0 +1,26 @@
+{
+  "observed_at": "2026-10-17T00:54:04.833Z",
+  "build": {
+    "id": "b86c091b-d61d-4859-b994-f0db41fbd955",
+    "status": "stopped",
+    "outcome": "success",
+    "sha": "00917e0c33fb96a3a9022d4f6cd52e1a6f307228",
+    "stopped_on": "2026-10-17T00:52:44.355Z"
+  },
+  "deployment": {
+    "id": "55ee479f-30f6-4608-bd53-e92267bf287b",
+    "source": "wrangler",
+    "strategy": "percentage",
+    "author_email": "mohamad.ismail.mohd.izwan@gmail.com",
+    "annotations": {
+      "workers/triggered_by": "deployment"
+    },
+    "versions": [
+      {
+        "version_id": "9a98e22c-2d53-46b8-b3c8-a916d92c71e0",
+        "percentage": 100
+      }
+    ],
+    "created_on": "2026-10-17T00:52:37.060047Z"
+  }
+}

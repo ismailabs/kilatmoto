@@ -31,3 +31,11 @@ Cloudflare Workers Static Assets currently supports `_headers` on asset response
 For a defective new release, use Cloudflare's Worker version/deployment history to restore the last verified `kilatmoto` version, then verify its release SHA and all routes. The previous `rapimotion` Worker remains independent and available. Do not redirect the old hostname, change unrelated DNS, force-push or delete history. To restore the original build trigger only if explicitly needed, recreate it against the saved original Worker tag/repository connection with original build command empty and deploy command `npx wrangler deploy`; do not let that old trigger consume the new `kilatmoto` config.
 
 Completion requires the real evidence in `kilatmoto-Codex-Handoff/16-RELEASE-REPORT.md`; this runbook is not proof of deployment.
+
+## Scoped production refinements
+
+GitHub also had a legacy Pages publisher for this repository despite Cloudflare having no Pages projects. That duplicate repository-specific publisher was disabled and verified as absent through GitHub's Pages API. The repository homepage points to the Worker custom domain.
+
+The zone's pre-existing automatic Cloudflare Web Analytics setup injected a beacon into the new site's HTML. The existing CSP blocked it. A proposed host-only RUM exclusion was rejected by the account's rule limit without changing the existing rules. The new Worker's own `_headers` therefore uses `Cache-Control: public, max-age=0, must-revalidate, no-transform`, the documented way to prevent automatic beacon injection. This is scoped to this site's responses; the zone-wide analytics setting and other hosts are untouched. Preserve this header and verify actual HTML has no injected beacon after future releases.
+
+Reference: https://developers.cloudflare.com/web-analytics/faq/#my-website-is-proxied-through-cloudflare-but-web-analytics-automatic-setup-is-not-working

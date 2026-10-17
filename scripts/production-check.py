@@ -22,6 +22,7 @@ try:
   status,headers,data,final=get(origin+route);scan=Scan();scan.feed(data.decode('utf8'));low={k.lower():v for k,v in headers.items()};source=data.decode('utf8')
   out['routes'].append({'route':route,'status':status,'final_url':final,'headers':headers,'title':scan.title,'robots':scan.metadata.get('robots'),'body_sha256':hashlib.sha256(data).hexdigest()})
   check(route+' direct 200',status==200 and final==origin+route);check(route+' content matches committed source',eqgit(('index.html' if route=='/' else route.strip('/')+'/index.html'),data));check(route+' release header',low.get('x-release-sha')==args.sha)
+  check(route+' only local application script',[a.get('src') for t,a in scan.tags if t=='script']==['/assets/js/main.js'])
   check(route+' brand and fictional disclosure','KILAT MOTORWORKS' in source and 'fictional' in source.lower());check(route+' security policies',"connect-src 'none'" in low.get('content-security-policy','') and "form-action 'none'" in low.get('content-security-policy','') and low.get('x-frame-options')=='DENY')
   if args.mode=='production':
    check(route+' indexable',scan.metadata.get('robots')==['index, follow'] and 'noindex' not in low.get('x-robots-tag','').lower());check(route+' canonical',any(t=='link' and a.get('rel')=='canonical' and a.get('href')==origin+route for t,a in scan.tags));check(route+' social',scan.metadata.get('og:url')==[origin+route] and scan.metadata.get('og:image')==[origin+'/og-image.webp'] and scan.metadata.get('twitter:image')==[origin+'/og-image.webp'])
