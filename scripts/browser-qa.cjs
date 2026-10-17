@@ -116,6 +116,10 @@ async function reveal(p) {
       await expect(p).toHaveURL(base + "/" + (route ? route + "/" : ""));
     }
     check("All desktop navigation links", true);
+    await load(p, "/");
+    await p.locator('.concept-strip a').click();
+    await expect(p.locator('#creator h2')).toBeInViewport();
+    check("Creator disclosure anchor lands in viewport", true);
     await load(p, "/projects/");
     for (const [filter, count] of [
       ["exterior", 1],

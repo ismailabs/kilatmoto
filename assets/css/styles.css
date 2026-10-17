@@ -1358,8 +1358,3 @@ textarea[aria-invalid="true"] {
 .nav-bar, #primary-nav { flex-wrap: wrap; }
 .service-preview > *, .service-grid > *, .projects-grid > *, .process-grid > *, .preview-grid > *, .split-intro > *, .contact-grid > * { min-width: 0; max-width: 100%; }
 .principles > div, .principles span { min-width: 0; overflow-wrap: anywhere; }
-/* Let the browser defer off-screen home sections while keeping their DOM accessible. */
-body[data-page="home"] main > .section {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 850px;
-}
