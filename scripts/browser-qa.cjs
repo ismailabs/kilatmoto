@@ -60,10 +60,20 @@ async function reveal(p) {
         );
         check("One H1 " + route, (await p.locator("h1").count()) === 1);
         if ([390, 1440].includes(width)) {
+          const originalViewport = p.viewportSize();
+          // Expand only capture height so native content-visibility sections are painted.
+          // Responsive and axe checks retain the original viewport below.
+          const estimatedHeight = await p.evaluate(() => Math.ceil(document.body.getBoundingClientRect().height));
+          await p.setViewportSize({width, height: estimatedHeight + 2000});
+          await p.evaluate(() => new Promise(requestAnimationFrame));
+          const paintedHeight = await p.evaluate(() => Math.ceil(document.body.getBoundingClientRect().height));
+          await p.setViewportSize({width, height: paintedHeight});
+          await p.evaluate(() => new Promise(requestAnimationFrame));
           await p.screenshot({
             path: `${out}/${prefix}-${route || "home"}-${width}.png`,
             fullPage: true,
           });
+          await p.setViewportSize(originalViewport);
           const a = await new AxeBuilder({ page: p })
             .withTags(["wcag2a", "wcag2aa", "wcag21aa", "wcag22aa"])
             .analyze();
