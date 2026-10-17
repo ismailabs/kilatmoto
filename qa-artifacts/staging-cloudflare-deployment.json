@@ -1,0 +1,60 @@
+{
+  "observed_at": "2026-10-17T00:48:34.431Z",
+  "build": {
+    "id": "63937f11-b178-4ceb-b733-bd208884cc5d",
+    "status": "stopped",
+    "outcome": "success",
+    "sha": "834ac43e8a8fd6e93d9eb340b75aa7916a86a775",
+    "stopped_on": "2026-10-17T00:48:00.899Z"
+  },
+  "deployments": {
+    "deployments": [
+      {
+        "id": "903858b9-0240-4ebb-98ff-e6e9d74995be",
+        "source": "wrangler",
+        "strategy": "percentage",
+        "author_email": "mohamad.ismail.mohd.izwan@gmail.com",
+        "annotations": {
+          "workers/triggered_by": "deployment"
+        },
+        "versions": [
+          {
+            "version_id": "45f8388b-e77a-4992-bcf7-b4ed09dbda84",
+            "percentage": 100
+          }
+        ],
+        "created_on": "2026-10-17T00:47:50.952612Z"
+      },
+      {
+        "id": "338e4765-ea31-4d1b-bb2b-2e8cff776ca7",
+        "source": "api",
+        "strategy": "percentage",
+        "author_email": "mohamad.ismail.mohd.izwan@gmail.com",
+        "annotations": {
+          "workers/message": "Reserve kilatmoto for tested static-asset migra...",
+          "workers/triggered_by": "upload"
+        },
+        "versions": [
+          {
+            "version_id": "bf6d994d-eb55-48ce-b5d6-03c7b2a1e27c",
+            "percentage": 100
+          }
+        ],
+        "created_on": "2026-10-17T00:36:34.922483Z"
+      }
+    ]
+  },
+  "domain": [
+    {
+      "id": "0197353b8eac4ce366b2ceaa4ce02ea49fcd8505",
+      "zone_id": "dc2bee92d5853929394633d0a4165093",
+      "zone_name": "ismailstudio.my",
+      "hostname": "kilatmoto.ismailstudio.my",
+      "service": "kilatmoto",
+      "environment": "production",
+      "cert_id": "347c9edb-459b-4988-be1f-34eb7ca0f0b3",
+      "previews_enabled": false,
+      "enabled": true
+    }
+  ]
+}

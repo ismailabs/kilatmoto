@@ -14,7 +14,7 @@ def check(name,ok):
  out['checks'].append({'name':name,'pass':bool(ok)})
  if not ok:issues.append(name)
 def get(url):
- with urlopen(Request(url,headers={'User-Agent':'KILAT-release-verification/1.0','Accept-Encoding':'identity'}),timeout=40) as r:return r.status,dict(r.headers.items()),r.read(),r.url()
+ with urlopen(Request(url,headers={'User-Agent':'KILAT-release-verification/1.0','Accept-Encoding':'identity'}),timeout=40) as r:return r.status,dict(r.headers.items()),r.read(),r.geturl()
 def eqgit(path,data):
  expected=subprocess.check_output(['git','show',args.sha+':'+path]);return hashlib.sha256(expected).hexdigest()==hashlib.sha256(data).hexdigest()
 try:
@@ -42,7 +42,12 @@ try:
  try:
   with opener.open('https://rapimotion.ismailstudio.my/',timeout=40) as r: old={'status':r.status,'headers':dict(r.headers.items()),'body':r.read().decode()}
  except HTTPError as e:old={'status':e.code,'headers':dict(e.headers.items()),'body':e.read().decode()}
- out['old_host']={'status':old['status'],'headers':old['headers'],'has_original_brand':'RAPI MOTION' in old['body'],'has_noindex':'noindex' in old['body'].lower() or 'noindex' in str(old['headers']).lower()};check('Old host no redirect to new host',old['status']==200 and 'kilatmoto.ismailstudio.my' not in old['headers'].get('Location',''));check('Old host remains noindex',out['old_host']['has_noindex'])
+ out['old_host_http']={'status':old['status'],'headers':old['headers']}
+ # The old host returns 403 to urllib but 200 to a normal browser. Preserve both observations.
+ old_browser=json.loads(subprocess.check_output(['node','scripts/old-host-check.cjs'],text=True))
+ out['old_host_browser']=old_browser
+ check('Old host no redirect to new host',old_browser['status']==200 and old_browser['final_url']=='https://rapimotion.ismailstudio.my/' and old_browser['request_chain']==['https://rapimotion.ismailstudio.my/'])
+ check('Old host remains original noindex site','RAPI MOTION' in old_browser['title'] and 'noindex' in old_browser['robots'])
  for path in ['/.git/config','/README.md','/kilatmoto-Codex-Handoff/00-START-HERE.md','/scripts/build.mjs','/node_modules/','/not-a-route/']:
   try:s,h,d,u=get(origin+path)
   except HTTPError as e:s=e.code
@@ -51,6 +56,9 @@ try:
  with socket.create_connection(('kilatmoto.ismailstudio.my',443),timeout=20) as sock:
   with ssl.create_default_context().wrap_socket(sock,server_hostname='kilatmoto.ismailstudio.my') as conn:out['tls']={'version':conn.version(),'certificate':conn.getpeercert()}
  check('TLS hostname and trust chain verified',bool(out['tls']['certificate']))
+except Exception as error:
+ issues.append(type(error).__name__+': '+str(error))
+ raise
 finally:
  out['issues']=issues;Path('qa-artifacts').mkdir(exist_ok=True);Path('qa-artifacts/'+args.mode+'-http-evidence.json').write_text(json.dumps(out,indent=2));print(json.dumps({'mode':args.mode,'checks':len(out['checks']),'issues':issues}))
 if issues:raise SystemExit(1)
